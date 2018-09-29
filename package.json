@@ -19,10 +19,13 @@
   },
   "homepage": "https://github.com/tmcfarlin412/tmcfarlin412.github.io#readme",
   "devDependencies": {
+    "@material/button": "^0.40.0",
+    "autoprefixer": "^9.1.5",
     "css-loader": "^1.0.0",
     "extract-loader": "^3.0.0",
     "file-loader": "^2.0.0",
     "node-sass": "^4.9.3",
+    "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "webpack": "^3.12.0"
   }
