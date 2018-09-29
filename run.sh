@@ -1,3 +1,3 @@
-cp -rf ./src/mypages ./jsrc/mypages
-#cp ./src/index.html ./jsrc/index.html
+cp ./src/index.html ./jsrc/
+cp ./src/_* ./jsrc/
 bundle exec jekyll serve

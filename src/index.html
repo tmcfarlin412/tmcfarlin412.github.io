@@ -1,11 +1,18 @@
+--- 
+title: Home 
+---
+<!doctype html>
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
   <link rel="stylesheet" href="/assets/css/bundle.css">
   <script src="/assets/js/bundle.js" async></script>
 </head>
 
 <body>
+  <h1>{{ "Hello World!" | downcase }}</h1>
   <button class="foo-button mdc-button">
     Button
   </button>
