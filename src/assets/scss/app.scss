@@ -1,6 +1,14 @@
 @import "@material/button/mdc-button";
+@import "@material/top-app-bar/mdc-top-app-bar";
 
-.foo-button {
-  @include mdc-button-ink-color(teal);
-  @include mdc-states(teal);
+body {
+  margin: 0;
+}
+
+.mdc-top-app-bar {
+  @include mdc-top-app-bar-fill-color(grey);
+}
+
+.tmc-home-icon {
+  background: url('/assets/images/icon.png')
 }
