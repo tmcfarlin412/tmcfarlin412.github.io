@@ -1,0 +1,29 @@
+{
+  "name": "tmcfarlin412.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".style-bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js && ./run.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmcfarlin412/tmcfarlin412.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmcfarlin412/tmcfarlin412.github.io/issues"
+  },
+  "homepage": "https://github.com/tmcfarlin412/tmcfarlin412.github.io#readme",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "extract-loader": "^3.0.0",
+    "file-loader": "^2.0.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "webpack": "^3.12.0"
+  }
+}
