@@ -1,0 +1,19 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+body {
+  margin: 0;
+}
+
+.tmc-logo {
+  width: 24px;
+  height: 24px;
+  src: url('/assets/images/logo.png')
+}
+
+.mdc-top-app-bar {
+  background: transparent;
+  color: black;
+}

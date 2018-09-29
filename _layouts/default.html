@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tom McFarlin Consulting</title>
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+    <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <a href="#">
+              <img src='/assets/images/logo.png' class="tmc-logo"></img>
+            </a>
+            <span class="mdc-top-app-bar__title">Tom McFarlin Consulting</span>
+          </section>
+        </div>
+      </header>
+  <section class="content">
+    {{ content }}
+  </section>
+</body>
+</html>
