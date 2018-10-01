@@ -116,3 +116,12 @@
         margin-top: 65px;
     }
 }
+
+footer ul {
+  display: flex;
+  align-content: center
+}
+
+footer li {
+  
+}

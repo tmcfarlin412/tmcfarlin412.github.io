@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // const topAppBarElement = document.querySelector('.mdc-top-app-bar');
     // const topAppBar = new MDCTopAppBar(topAppBarElement);
 
-    mdc.topAppBar.MDCTopAppBar.attachTo(document.querySelector('.mdc-top-app-bar--prominent'));
+    // mdc.topAppBar.MDCTopAppBar.attachTo(document.querySelector('.mdc-top-app-bar'));
 
     // // Tab bar
     // import {MDCTabBar} from '@material/tab-bar';
