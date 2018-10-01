@@ -117,11 +117,18 @@
     }
 }
 
-footer ul {
+
+footer .tmc-social-media {
   display: flex;
-  align-content: center
+  justify-content: center;
+  list-style: none;
+  padding: 0px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-footer li {
-  
+footer img {
+  width: 24px;
+  height: 24px;
+  padding: 12px;
 }
