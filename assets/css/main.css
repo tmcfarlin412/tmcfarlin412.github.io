@@ -54,6 +54,58 @@
   background-color: var(--tmc-theme-yellow, black)
 }
 
-.mdc-layout-grid {
-
+.tmc-profile-cell {
+  position: relative;
 }
+
+.tmc-profile-container {
+  position: relative;
+  width: 200px; 
+  height: 324.46px;
+  left:0;
+  right:0;
+  margin: auto;
+}
+
+@media (min-width: 480px) and (max-width: 839px) {
+  .tmc-profile-container {
+    width: 150px;
+    height: 243.35px;
+  }
+}
+
+@media (max-width: 479px) {
+  .tmc-profile-container {
+    width: 150px;
+    height: 243.35px;
+  }
+}
+
+.tmc-profile-triangle {
+  width: 100%;
+  height: 100%;
+}
+
+.tmc-profile {
+  position: absolute;
+  width: 66%;
+  height: auto;
+  top: 10%;
+  left: 17%;
+  right: 0;
+  background: white;
+  padding: 2px;
+}
+
+.circle {
+  border-radius: 100%;
+}
+
+
+/* 
+.circle-shadow {
+  box-shadow: 0px 4px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 4px  rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0px -10px  rgba(0,0,0,0.6);
+	-o-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+} */
