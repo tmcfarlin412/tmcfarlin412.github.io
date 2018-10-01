@@ -1,3 +1,55 @@
-body {
-  margin: 0
+:root {
+  --tmc-theme-red: #FC696E;
+  --tmc-theme-blue: #5784C3;
+  --tmc-theme-yellow: #FEC30A;
+
+  --mdc-theme-primary: white;
+  --mdc-theme-secondary: var(--tmc-theme-blue, black);
+  --mdc-theme-on-primary: black;
+  --mdc-theme-on-secondary: white;
+  
+}
+
+.tab-bar-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.mdc-top-app-bar {
+  position: relative;
+  background-color: var(--mdc-theme--primary, white);
+}
+
+.mdc-top-app-bar__navigation-icon {
+  background-image: url('/assets/images/logo.png');
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: 12px 12px;
+}
+
+.mdc-top-app-bar__navigation-icon::after, .mdc-top-app-bar__navigation-icon::before {
+  background-color: var(--mdc-theme-secondary, black) !important;
+}
+
+.mdc-top-app-bar__title {
+  padding-left: 8px;
+}
+
+.mdc-tab-bar {
+  position: relative;
+  background-color: var(--mdc-theme--primary, white);
+  color: var(--mdc-theme--on-primary, black)
+}
+
+.mdc-tab-bar button:nth-child(1) .mdc-tab-indicator>.mdc-tab-indicator__content--underline {
+  background-color: var(--tmc-theme-blue, black)
+}
+
+.mdc-tab-bar button:nth-child(2) .mdc-tab-indicator>.mdc-tab-indicator__content--underline {
+  background-color: var(--tmc-theme-red, black)
+}
+
+.mdc-tab-bar button:nth-child(3) .mdc-tab-indicator>.mdc-tab-indicator__content--underline {
+  background-color: var(--tmc-theme-yellow, black)
 }

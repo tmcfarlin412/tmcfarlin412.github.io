@@ -1,24 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   <title>Tom McFarlin Consulting</title>
   <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  </head>
-  
-  <body>
-    <header class="mdc-top-app-bar">
+  <script src="{{ '/assets/js/app.js' | relative_url }}"></script>
+</head>
+
+<body>
+  <div class="tab-bar-container">
+    <header class="mdc-top-app-bar--prominent">
       <div class="mdc-top-app-bar__row">
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-          <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
-          <span class="mdc-top-app-bar__title">Title2</span>
+          <div class="material-icons mdc-top-app-bar__navigation-icon mdc-ripple-surface mdc-ripple-surface--accent"></div>
+          <span class="mdc-top-app-bar__title mdc-theme--on-primary">Tom McFarlin Consulting</span>
         </section>
       </div>
     </header>
-    <section class="content">
-      {{ content }}
-    </section>
-  </body>
+    <div class="mdc-tab-bar" role="tablist">
+      <div class="mdc-tab-scroller">
+        <div class="mdc-tab-scroller__scroll-area">
+          <div class="mdc-tab-scroller__scroll-content">
+            <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+              <span class="mdc-tab__content">
+                <span class="mdc-tab__text-label mdc-theme--on-primary">Home</span>
+              </span>
+              <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+              </span>
+              <span class="mdc-tab__ripple"></span>
+            </button>
+            <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+              <span class="mdc-tab__content">
+                <!-- <span class="mdc-tab__icon material-icons"></span> -->
+                <span class="mdc-tab__text-label mdc-theme--on-primary">Portfolio</span>
+              </span>
+              <span class="mdc-tab-indicator">
+                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+              </span>
+              <span class="mdc-tab__ripple"></span>
+            </button>
+            <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+              <span class="mdc-tab__content">
+                <!-- <span class="mdc-tab__icon material-icons">favorite</span> -->
+                <span class="mdc-tab__text-label mdc-theme--on-primary">Blog</span>
+              </span>
+              <span class="mdc-tab-indicator">
+                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+              </span>
+              <span class="mdc-tab__ripple"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="content">
+    {{ content }}
+  </section>
+</body>
+
 </html>
