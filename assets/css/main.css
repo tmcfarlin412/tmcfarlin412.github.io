@@ -11,7 +11,7 @@
 }
 
 .tab-bar-container {
-  position: fixed;
+  position: flex;
   top: 0px;
   left: 0px;
 }
@@ -52,4 +52,8 @@
 
 .mdc-tab-bar button:nth-child(3) .mdc-tab-indicator>.mdc-tab-indicator__content--underline {
   background-color: var(--tmc-theme-yellow, black)
+}
+
+.mdc-layout-grid {
+
 }
