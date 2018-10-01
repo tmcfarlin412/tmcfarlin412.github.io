@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+---
+---
 <html>
 
 <head>
@@ -12,7 +13,7 @@
 </head>
 
 <body class="mdc-typography">
-  <div class="tab-bar-container">
+  <div class="tmc-top-bar-container">
     <header class="mdc-top-app-bar--prominent">
       <div class="mdc-top-app-bar__row">
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
@@ -63,25 +64,14 @@
     <div class="mdc-layout-grid__inner">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1-desktop"></div>
       <section class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10">
-        <div class="mdc-layout-grid__inner">
-          <div class="mdc-layout-grid__cell--span-4 tmc-profile-cell">
-            <div class="tmc-profile-container">
-              <img class="tmc-profile-triangle" src="/assets/images/blue.svg">
-              <img class="tmc-profile circle mdc-elevation--z6" src="/assets/images/profile.png">
-            </div>
-          </div>
-          <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-desktop">
-            <h1>Hi, I'm Tom!</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas ac arcu vel aliquam. Mauris sed turpis dictum, molestie elit in, suscipit sem. Nulla et dictum ante. Etiam sit amet nisl ut tellus ullamcorper feugiat viverra et nunc. Etiam ut fermentum orci. Cras eget lectus sed magna semper posuere quis ac nisl. Proin ut eleifend tellus. Aliquam sem magna, interdum sed erat eu, lobortis elementum libero. Praesent eget nunc at sem consectetur dictum sit amet ac nulla. Aenean rhoncus enim a sollicitudin mattis. Cras ut sodales est. Cras bibendum enim ac risus accumsan fermentum. Curabitur finibus, felis vitae auctor vehicula, turpis risus imperdiet lacus, sed viverra urna purus id dolor. Curabitur sit amet enim vel risus bibendum dapibus.
-            </p>
-          </div>
-          <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-desktop">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas ac arcu vel aliquam. Mauris sed turpis dictum, molestie elit in, suscipit sem. Nulla et dictum ante. Etiam sit amet nisl ut tellus ullamcorper feugiat viverra et nunc. Etiam ut fermentum orci. Cras eget lectus sed magna semper posuere quis ac nisl. Proin ut eleifend tellus. Aliquam sem magna, interdum sed erat eu, lobortis elementum libero. Praesent eget nunc at sem consectetur dictum sit amet ac nulla. Aenean rhoncus enim a sollicitudin mattis. Cras ut sodales est. Cras bibendum enim ac risus accumsan fermentum. Curabitur finibus, felis vitae auctor vehicula, turpis risus imperdiet lacus, sed viverra urna purus id dolor. Curabitur sit amet enim vel risus bibendum dapibus.
-            </p>
-          </div>
-          <div class="mdc-layout-grid__cell--span-4"></div>
+        <div class="mdc-layout-grid__inner tmc-content tmc-content-intro tmc-show">
+            {% include intro.html %}
+        </div>
+        <div class="mdc-layout-grid__inner tmc-content tmc-content-portfolio tmc-hide">
+            {% include portfolio.html %}
+        </div>
+        <div class="mdc-layout-grid__inner tmc-content tmc-content-blog tmc-hide">
+            {% include blog.html %}
         </div>
       </section>
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1-desktop"></div>
