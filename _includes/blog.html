@@ -1,14 +1,7 @@
-<div class="mdc-layout-grid__cell--span-4 tmc-profile-cell">
+ {% for post in site.posts %}
+<div class="tmc-post-excerpt mdc-ripple-surface mdc-ripple-surface--accent mdc-layout-grid__cell--span-12 mdc-ripple-surface mdc-ripple-surface--accent" data-url="{{ post.url }}">
+    <h2>{{ post.title }}</h2>
+
+    <p>{{ post.excerpt }}</p>
 </div>
-<div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-desktop">
-    <h1>Blog</h1>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas ac arcu vel aliquam. Mauris sed turpis dictum,
-        molestie elit in, suscipit sem. Nulla et dictum ante. Etiam sit amet nisl ut tellus ullamcorper feugiat viverra et
-        nunc. Etiam ut fermentum orci. Cras eget lectus sed magna semper posuere quis ac nisl. Proin ut eleifend tellus.
-        Aliquam sem magna, interdum sed erat eu, lobortis elementum libero. Praesent eget nunc at sem consectetur dictum
-        sit amet ac nulla. Aenean rhoncus enim a sollicitudin mattis. Cras ut sodales est. Cras bibendum enim ac risus accumsan
-        fermentum. Curabitur finibus, felis vitae auctor vehicula, turpis risus imperdiet lacus, sed viverra urna purus id
-        dolor. Curabitur sit amet enim vel risus bibendum dapibus.
-    </p>
-</div>
+{% endfor %}
