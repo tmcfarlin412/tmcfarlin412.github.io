@@ -132,3 +132,7 @@ footer img {
   height: 24px;
   padding: 12px;
 }
+
+button.mdc-tab:nth-child(2) {
+  --mdc-theme-secondary: var(--tmc-theme-red, black);
+}

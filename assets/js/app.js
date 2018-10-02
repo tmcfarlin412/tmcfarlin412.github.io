@@ -8,6 +8,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // mdc.topAppBar.MDCTopAppBar.attachTo(document.querySelector('.mdc-top-app-bar'));
 
+    // const tabs = document.querySelectorAll('.mdc-tab');
+    // for (let index = 0; index < tabs.length; index++) {
+    //     const tab = tabs[index];
+    //     mdc.ripple.MDCRipple.attachTo(tab);
+    // }
+
     // // Tab bar
     // import {MDCTabBar} from '@material/tab-bar';
 
