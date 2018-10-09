@@ -1,3 +1,20 @@
+body {
+    margin: 0px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.tmc-grid-root {
+    padding: 0px;
+}
+
 :root {
     --tmc-theme-red: #FC696E;
     --tmc-theme-blue: #5784C3;
@@ -10,6 +27,10 @@
 
 .tmc-post-excerpt {
   cursor: pointer;
+}
+
+.tmc-content {
+    grid-gap: 0px;
 }
 
 .tmc-content:nth-child(1) {
@@ -28,6 +49,7 @@
     position: flex;
     top: 0px;
     left: 0px;
+    padding: 8px;
 }
 
 .mdc-top-app-bar {
@@ -178,4 +200,42 @@ footer img {
 
 button.mdc-tab:nth-child(2) {
   --mdc-theme-secondary: var(--tmc-theme-red, black);
+}
+
+.tmc-row-intro {
+    /* background: rgba(252, 105, 110, 0.2); */
+    padding: 24px;
+    /* border: solid 1px black; */
+}
+
+.tmc-intro-row-odd {
+    background: rgba(87, 132, 195, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.tmc-intro-row-even {
+    background: var(--tmc-theme-blue, white);
+    color: white;
+    padding: 24px;
+}
+
+.tmc-intro-one-contact {
+    background-image: url('/assets/images/bug.png')
+}
+
+.tmc-intro-bugs {
+    background-image: url('/assets/images/bug.png')
+}
+
+.tmc-intro-solutions {
+    background-image: url('/assets/images/bug.png')
+}
+
+.tmc-intro-card__primary {
+    padding: 16px;
+}
+
+.tmc-intro-card__primary p {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }

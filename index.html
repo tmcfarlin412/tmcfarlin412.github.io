@@ -63,21 +63,15 @@
       </div>
     </div>
   </div>
-  <div class="mdc-layout-grid">
-    <div class="mdc-layout-grid__inner">
-      <div class="tmc-space-tablet tmc-space-desktop mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
-      <section class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10-desktop mdc-layout-grid__cell--span-6-tablet">
-        <div class="mdc-layout-grid__inner tmc-content tmc-content-intro tmc-show">
-            {% include intro.html %}
-        </div>
-        <div class="mdc-layout-grid__inner tmc-content tmc-content-portfolio tmc-hide">
-            {% include portfolio.html %}
-        </div>
-        <div class="mdc-layout-grid__inner tmc-content tmc-content-blog tmc-hide">
-            {% include blog.html %}
-        </div>
-      </section>
-      <div class="tmc-space-desktop tmc-space-tablet mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
+  <div class="tmc-grid-root mdc-layout-grid">
+    <div class="tmc-content tmc-content-intro tmc-show mdc-layout-grid__inner">
+        {% include intro.html %}
+    </div>
+    <div class="tmc-content tmc-content-portfolio tmc-hide mdc-layout-grid__inner">
+        {% include portfolio.html %}
+    </div>
+    <div class="tmc-content tmc-content-blog tmc-hide mdc-layout-grid__inner">
+        {% include blog.html %}
     </div>
   </div>
   {% include footer.html name=user.first upwork=user.upwork linkedin=user.linkedin email=user.email github=user.github %}
