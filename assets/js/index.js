@@ -27,12 +27,38 @@ function onTabSelected(tabIndex) {
         const element = tmcContent[index];
         if (index == tabIndex) {
             element.classList.remove('tmc-hide');
-            element.classList.add('tmc-show');
+            element.classList.add('tmc-show-grid');
         } else {
             element.classList.add('tmc-hide');
-            element.classList.remove('tmc-show');
+            element.classList.remove('tmc-show-grid');
         }
     }
+}
+
+var testimonialIndex = 0;
+var testimonialCount = 0;
+function refreshTestimonials() {
+    const testimonialNodes = document.querySelectorAll('.tmc-testimonial')
+    for (let index = 0; index < testimonialNodes.length; index++) {
+        const testimonialNode = testimonialNodes[index];
+        if (index == testimonialIndex) {
+            testimonialNode.classList.add("tmc-show")
+            testimonialNode.classList.remove("tmc-hide")
+        } else {
+            testimonialNode.classList.remove("tmc-show")
+            testimonialNode.classList.add("tmc-hide")
+        }
+    }
+}
+
+function showNextTestimonial() {
+    testimonialIndex = ++testimonialIndex % testimonialCount;
+    refreshTestimonials()
+}
+
+function showPreviousTestimonial() {
+    testimonialIndex = (++testimonialIndex + testimonialCount) % testimonialCount;
+    refreshTestimonials()
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -78,4 +104,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
             window.open(postExcerpt.getAttribute('data-url'), '_self')
         })
     }
+
+    // Testimonials
+    testimonialCount = document.querySelectorAll('.tmc-testimonial').length;
+    document.querySelector('.tmc-row-testimonials .tmc-arrow-left').addEventListener('click', function() {
+        showPreviousTestimonial()
+    })
+
+    document.querySelector('.tmc-row-testimonials .tmc-arrow-right').addEventListener('click', function() {
+        showNextTestimonial()
+    })
 });

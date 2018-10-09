@@ -140,11 +140,15 @@ h3 {
     border-radius: 100%;
 }
 
-.tmc-hide {
-    display: none;
+.tmc-show {
+    display: block;
 }
 
-.tmc-show {
+.tmc-hide {
+    display: none !important;
+}
+
+.tmc-show-grid {
     display: grid;
 }
 
@@ -238,4 +242,77 @@ button.mdc-tab:nth-child(2) {
 .tmc-intro-card__primary p {
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.tmc-testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 700px;
+}
+
+.tmc-testimonial__profile {
+    width: 144px;
+    position: relative;
+    flex-grow: 0;
+}
+
+.tmc-testimonial__profile-image {
+    width: 128px;
+    height: 128px;
+    background-size: cover;
+    border-radius: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.tmc-testimonial__raya .tmc-testimonial__profile-image {
+    background-image: url('/assets/images/raya.jpeg');
+}
+
+.tmc-testimonial__alec .tmc-testimonial__profile-image {
+    background-image: url('/assets/images/alec.jpeg');
+}
+
+.tmc-testimonial__profile-text {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.tmc-testimonial__quote {
+    display: inline-block;
+    width: 0px;
+    max-width: 400px;
+    flex-grow: 1;
+    margin-left: 16px;
+}
+
+.tmc-testimonial a {
+    color: white !important;
+}
+
+.tmc-row-testimonials {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tmc-arrow-right {
+    width: 48px;
+    height: 48px;
+    background-image: url('/assets/images/arrow-right.png');
+    background-size: cover;
+}
+
+.tmc-arrow-left {
+    width: 48px;
+    height: 48px;
+    background-image: url('/assets/images/arrow-left.png');
+    background-size: cover;
+}
+
+.tmc-row-testimonials .tmc-arrow-left, .tmc-row-testimonials .tmc-arrow-right  {
+    cursor: pointer;
 }
