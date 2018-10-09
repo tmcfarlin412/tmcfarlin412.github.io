@@ -42,6 +42,17 @@ h3 {
     flex-direction: column;
 }
 
+.tmc-portfolio__project-image-container {
+    height: 100px;
+    width: 100%;
+}
+
+.tmc-portfolio__project-image-container > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 .tmc-portfolio__project-task-image-container {
     flex-grow: 0;
     flex-shrink: 0;
@@ -382,11 +393,7 @@ button.mdc-tab:nth-child(2) {
         justify-content: left;
     }
 
-    .tmc-portfolio__project-task:nth-child(2n) {
-        flex-direction: row;
-    }
-
-    .tmc-portfolio__project-task:nth-child(2n+1) {
+    .tmc-portfolio__project-task {
         flex-direction: row-reverse;
     }
 }

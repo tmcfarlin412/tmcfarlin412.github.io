@@ -1,8 +1,12 @@
 {% for project in site.data.portfolio %}
 <div class="tmc-space-desktop mdc-layout-grid__cell--span-1-desktop"></div>
+<div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-10-desktop">
+    <img class="tmc-portfolio__project-image" src="{{ project.image }}" alt="{{ project.name }}">
+</div>
+<div class="tmc-space-desktop mdc-layout-grid__cell--span-1-desktop"></div>
+<div class="tmc-space-desktop mdc-layout-grid__cell--span-1-desktop"></div>
 <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-tablet mdc-layout-grid__cell--span-2-desktop">
-    <h2>{{ project.name }}</h2>
-    <img src="{{ project.image }}">
+    <h3>Summary</h3>
     <p>{{ project.intro }}</p>
 </div>
 <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-5-tablet mdc-layout-grid__cell--span-8-desktop">
