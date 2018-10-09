@@ -58,20 +58,33 @@
               </span>
               <span class="mdc-tab__ripple"></span>
             </button>
+            <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                <span class="mdc-tab__content">
+                  <!-- <span class="mdc-tab__icon material-icons">favorite</span> -->
+                  <span class="mdc-tab__text-label mdc-theme--on-primary">Contact</span>
+                </span>
+                <span class="mdc-tab-indicator">
+                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+              </button>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div class="tmc-grid-root mdc-layout-grid">
-    <div class="tmc-content tmc-content-intro tmc-show-grid mdc-layout-grid__inner">
+    <div class="tmc-content tmc-content__intro tmc-show-grid mdc-layout-grid__inner">
         {% include intro.html %}
     </div>
-    <div class="tmc-content tmc-content-portfolio tmc-hide mdc-layout-grid__inner">
+    <div class="tmc-content tmc-content__portfolio tmc-hide mdc-layout-grid__inner">
         {% include portfolio.html %}
     </div>
-    <div class="tmc-content tmc-content-blog tmc-hide mdc-layout-grid__inner">
+    <div class="tmc-content tmc-content__blog tmc-hide mdc-layout-grid__inner">
         {% include blog.html %}
+    </div>
+    <div class="tmc-content tmc-content__blog tmc-hide mdc-layout-grid__inner">
+        {% include contact.html name=user.first upwork=user.upwork linkedin=user.linkedin email=user.email github=user.github %}
     </div>
   </div>
   {% include footer.html name=user.first upwork=user.upwork linkedin=user.linkedin email=user.email github=user.github %}

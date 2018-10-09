@@ -1,7 +1,14 @@
- {% for post in site.posts %}
-<div class="tmc-post-excerpt mdc-ripple-surface mdc-ripple-surface--accent mdc-layout-grid__cell--span-12 mdc-ripple-surface mdc-ripple-surface--accent" data-url="{{ post.url }}">
-    <h2>{{ post.title }}</h2>
-
-    <p>{{ post.excerpt }}</p>
+{% for post in site.posts %}
+<div class="tmc-space-tablet tmc-space-desktop mdc-layout-grid__cell--span-1-tablet mdc-layout-grid__cell--span-2-desktop"></div>
+<div class="tmc-blog-card mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-8-desktop mdc-card mdc-elevation--z6"
+    data-url="{{ post.url }}">
+    <div class="mdc-card__primary-action">
+        <div class="tmc-intro__one-contact mdc-card__media"></div>
+        <div class="tmc-intro-card__primary">
+            <h2>{{ post.title }}</h3>
+                <p>{{ post.excerpt }}</p>
+        </div>
+    </div>
 </div>
+<div class="tmc-space-tablet tmc-space-desktop mdc-layout-grid__cell--span-1-tablet mdc-layout-grid__cell--span-2-desktop"></div>
 {% endfor %}

@@ -81,6 +81,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             window.history.pushState({tab: 1}, "", "?tab=portfolio");
         } else if (e.detail.index == 2) {
             window.history.pushState({tab: 2}, "", "?tab=blog ");
+        } else if (e.detail.index == 3) {
+            window.history.pushState({tab: 2}, "", "?tab=contact ");
         } else {
             window.history.pushState({tab: 0}, "", "?tab=intro");
         }
@@ -93,11 +95,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
         onTabSelected(1)  
     } else if (queryParamTab == 'blog') {
         onTabSelected(2)
+    } else if (queryParamTab == 'contact') {
+        onTabSelected(3)
     } else {
         onTabSelected(0)
     }
 
-    const postExcerpts = document.querySelectorAll('.tmc-post-excerpt')
+    const postExcerpts = document.querySelectorAll('.tmc-blog-card')
     for (let index = 0; index < postExcerpts.length; index++) {
         const postExcerpt = postExcerpts[index];
         postExcerpt.addEventListener('click', function () {
