@@ -2,7 +2,7 @@ body {
     margin: 0px;
 }
 
-h2 {
+.tmc-content-intro h2 {
     text-align: center;
 }
 
@@ -97,7 +97,7 @@ h3 {
 
 .tmc-profile-cell {
     position: relative;
-    justify-content: left;
+    justify-content: center;
     display: flex;
 }
 
@@ -146,6 +146,12 @@ h3 {
     display: grid;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    background: rgba(87, 132, 195, 0.1);
+}
+
 footer .tmc-social-media {
   display: flex;
   justify-content: center;
@@ -155,10 +161,20 @@ footer .tmc-social-media {
   margin-right: 0;
 }
 
+footer .tmc-social-media img {
+
+}
+
 footer img {
   width: 24px;
   height: 24px;
   padding: 12px;
+}
+
+#tmc-references {
+    padding: 2px;
+    color: rgb(200, 200, 200) !important;
+    text-align: right;
 }
 
 button.mdc-tab:nth-child(2) {
@@ -276,6 +292,10 @@ button.mdc-tab:nth-child(2) {
 
 .tmc-row-testimonials .tmc-arrow-left, .tmc-row-testimonials .tmc-arrow-right  {
     cursor: pointer;
+}
+
+.tmc-technologies {
+    text-align: center;
 }
 
 /* tablet */
