@@ -63,6 +63,12 @@ function showPreviousTestimonial() {
 
 document.addEventListener("DOMContentLoaded", function (event) {
 
+    // Let's chat
+    document.getElementById('tmc-lets-chat').addEventListener('click', function() {
+        onTabSelected(3)
+    })
+
+    // History
     window.onpopstate = function(e) {
         let tabIndex
         if (e.state && e.state.tab) {

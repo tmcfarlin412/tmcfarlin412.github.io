@@ -1,0 +1,34 @@
+- ezclocker:
+  name: ezClocker
+  url: https://ezclocker.com
+  image: /assets/images/ezclocker/ezclocker.png
+  intro: A timesheet solution for business owners, ezClocker simplifies the clocking in/out process with Android and iOS applications. View more <a href="https://ezclocker.com" target="_blank">here</a>.
+  summary: Over the course of 2 months, the Android application was updated with crash fixes, performance optimizations, and UI tweaks. A custom algorithm tuned to the business goals was developed and deployed to improve the accuracy of ezClocker's location services.
+  tasks:
+    - 1:
+      name: Performance optimization
+      summary: When a phone application conducts unnecessary work in the background, the user suffers from battery loss and laggy interfaces. An audit of ezClocker was completed to find and resolve inefficiencies that improve the user experience.
+      image: /assets/images/ezclocker/performance.jpg
+    - 2:
+      name: Crash fixes
+      summary: Out of memory errors can be caused by just a few misplaced characters in code. Through debugging and evaluation of the memory allocation throughout the app lifecycle, memory leaks were discovered and patched.
+      image: /assets/images/ezclocker/crash.jpg
+    - 3:
+      name: Google location services
+      summary: ezClocker uses Google Maps and location services to gather and display data; it is crucial that this data is accuracte. The Android application was updated to use the latest Google Services Version 15 to ensure the latest technology was available to end-users. Additionally, Tom McFarlin consulting developed and deployed a location gathering algorithm to improve the accuracy of the location coordinates. The algorithm also reduced battery consumption!
+      image: /assets/images/ezclocker/location.jpg
+- cc:
+  name: Classroom Cache
+  url: https://classroomcache.com
+  image: /assets/images/cc/cc.png
+  intro: A solution for the widening homework gap, Classroom Cache enables students to complete their Google Classroom homework without an Internet connection. Learn more <a href="https://classroomcache.com" target="_blank">here</a>.
+  summary:
+  tasks:
+    - task1:
+      name: Performance optimization
+      summary: Performance optimization summary
+      image: /assets/images/bugs.png
+    - task2:
+      name: Crash fixes
+      summary: Fixed them
+      image: /assets/images/solutions.png

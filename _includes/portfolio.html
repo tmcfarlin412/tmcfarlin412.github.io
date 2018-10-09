@@ -1,33 +1,22 @@
-<div class="tmc-space-tablet tmc-space-desktop mdc-layout-grid__cell--span-1-tablet mdc-layout-grid__cell--span-2-desktop"></div>
-<div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-8-desktop mdc-card mdc-elevation--z6 ">
-    <div class="mdc-card__primary-action">
-        <div class="tmc-intro__one-contact mdc-card__media"></div>
-        <div class="tmc-intro-card__primary">
-            <h2>ezClocker</h3>
-                <p>Bug fixes etc.</p>
-        </div>
-    </div>
+{% for project in site.data.portfolio %}
+<div class="tmc-space-desktop mdc-layout-grid__cell--span-1-desktop"></div>
+<div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-tablet mdc-layout-grid__cell--span-2-desktop">
+    <h2>{{ project.name }}</h2>
+    <img src="{{ project.image }}">
+    <p>{{ project.intro }}</p>
 </div>
-<div class="tmc-space-tablet tmc-space-desktop mdc-layout-grid__cell--span-1-tablet mdc-layout-grid__cell--span-2-desktop"></div>
-<div class="tmc-space-tablet tmc-space-desktop mdc-layout-grid__cell--span-1-tablet mdc-layout-grid__cell--span-2-desktop"></div>
-<div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-8-desktop mdc-card mdc-elevation--z6 ">
-    <div class="mdc-card__primary-action">
-        <div class="tmc-intro__one-contact mdc-card__media"></div>
-        <div class="tmc-intro-card__primary">
-            <h2>ezClocker</h3>
-                <p>Bug fixes etc.</p>
+<div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-5-tablet mdc-layout-grid__cell--span-8-desktop">
+    {% for task in project.tasks %}
+        <div class="tmc-portfolio__project-task">
+            <div class="tmc-portfolio__project-task-image-container">
+            <img class="tmc-portfolio__project-task-image" src="{{ task.image }}">
+            </div>
+            <div class="tmc-portfolio__project-task-description">
+                <h3>{{ task.name }}</h3>
+                <p>{{ task.summary }}</p>
+            </div>
         </div>
-    </div>
+    {% endfor %}
 </div>
-<div class="tmc-space-tablet tmc-space-desktop mdc-layout-grid__cell--span-1-tablet mdc-layout-grid__cell--span-2-desktop"></div>
-<div class="tmc-space-tablet tmc-space-desktop mdc-layout-grid__cell--span-1-tablet mdc-layout-grid__cell--span-2-desktop"></div>
-<div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-8-desktop mdc-card mdc-elevation--z6 ">
-    <div class="mdc-card__primary-action">
-        <div class="tmc-intro__one-contact mdc-card__media"></div>
-        <div class="tmc-intro-card__primary">
-            <h2>ezClocker</h3>
-                <p>Bug fixes etc.</p>
-        </div>
-    </div>
-</div>
-<div class="tmc-space-tablet tmc-space-desktop mdc-layout-grid__cell--span-1-tablet mdc-layout-grid__cell--span-2-desktop"></div>
+<div class="tmc-space-desktop mdc-layout-grid__cell--span-1-desktop"></div>
+{% endfor %}
