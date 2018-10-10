@@ -38,7 +38,7 @@ h3 {
 
 
 .tmc-content__portfolio {
-    /* padding: 24px; */
+    padding: 24px;
 }
 
 .tmc-portfolio__project-task {
@@ -291,7 +291,6 @@ button.mdc-tab:nth-child(2) {
     }
 
     .tmc-intro__hi-container {
-        text-align: left;
         margin-top: 86px;
         background: inherit;
     }
@@ -339,11 +338,7 @@ button.mdc-tab:nth-child(2) {
 }
 
 .tmc-intro-card__primary {
-    padding: 24px;
-}
-
-.tmc-intro-card__primary h2 {
-    margin-top: 0px;
+    padding: 16px;
 }
 
 .tmc-intro-card__primary p {

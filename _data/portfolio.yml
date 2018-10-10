@@ -2,7 +2,7 @@
   name: ezClocker
   url: https://ezclocker.com
   image: /assets/images/ezclocker/ezclocker.png
-  summary: ezClocker is a timesheet solution for business owners. It simplifies the clocking in/out process with Android and iOS applications. Learn   more <a href="https://ezclocker.com" target="_blank">here</a>. Crash fixes, performance improvements, data gathering optimization, and front-end updates were made to the Android application.
+  summary: ezClocker is a timesheet solution for business owners. It simplifies the clocking in/out process with Android and iOS applications. Learn more about the ezClocker product <a href="https://ezclocker.com" target="_blank">here</a>.<br><br>Crash fixes, performance improvements, data gathering optimization, and front-end updates were made to the Android application.
   tasks:
     - 1:
       name: Performance optimization
@@ -17,7 +17,7 @@
   name: Classroom Cache
   url: https://classroomcache.com
   image: /assets/images/cc/cc.jpg
-  summary: Classroom Cache is a suite of Chrome Extensions and Chrome Apps. Without Classroom Cache, students may only view and complete their assignments when connected to the Internet. With Classroom Cache, students are enabled to complete their homework while offline. Learn more <a href="https://classroomcache.com" target="_blank">here</a>.
+  summary: Classroom Cache is a suite of Chrome Extensions and Chrome Apps that enables students to complete their Google Classroom homework without connection to the Internet. Learn more about the Classroom Cache product <a href="https://classroomcache.com" target="_blank">here</a>.<br><br>After initial consultation, a technical blueprint was formulated and Chrome Apps and Extensions were developed.
   technologies: 
     - Google Classroom APIs
     - Google Drive APIs
@@ -30,10 +30,10 @@
   tasks:
     - consultation:
       name: Consultation and Software Architecture 
-      summary: After a week of research, design, and documentation, a Software Design Description was delivered to serve as a roadmap for the development of the software. This documentation served as the blueprint for the development of the Classroom Cache suite.
+      summary: Research, design, and documentation was conducted to deliver a Software Design Description (SDD). The SDD was delivered to serve as a roadmap for the development of the Chrome Apps and Extensions.
     - teacherExt:
       name: Chrome Extension for Teachers
-      summary: A Chrome Extension was developed to extend the features on Google Classroom assignments. When creating assignments on Google Classroom, teachers select an assignment title, description, due date, and much more. A Chrome Extension was built to add an additional field "Cache offline" which informs student devices that materials attached to the assignment should be downloaded for offline consumption. The extension also provides an additional user interface for teachers to see whether student devices have cached the files.
+      summary: A Chrome Extension was developed to extend the features on Google Classroom assignments. When creating assignments on Google Classroom, teachers select an assignment title, description, due date, and much more. The Chrome Extension adds an additional field that teachers can configure so that student devices automatically download assignment materials for offline consumption. The extension also provides an additional user interface for teachers to track the progress of these downloads.
     - studendExt:
       name: Chrome App and Chrome Extension for Students
-      summary: A Chrome App and Chrome Extension were developed to facilitate background download of Google Classroom content to student devices. If a teacher marked an assignment as "Cache offline" the Chrome App and Extension work together to download Google files (Docs, Sheets, Slides), videos, images, and any other file content to local storage so that students can view the materials without the Internet. Files that are edited by students remain in sync offline and with Google Drive.
+      summary: A Chrome App and a Chrome Extension were developed to facilitate background download of Google Classroom content to student devices. If a teacher marked an assignment as "Cache offline" the Chrome App and Extension work together to download Google files (Docs, Sheets, Slides), videos, images, and any other file content to local storage so that students can view the materials without the Internet. Files that are edited by students remain in sync offline and with Google Drive.

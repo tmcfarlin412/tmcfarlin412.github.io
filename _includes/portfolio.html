@@ -23,4 +23,7 @@
     {% endfor %}
 </div>
 <div class="tmc-space-desktop mdc-layout-grid__cell--span-1-desktop"></div>
+{% if project != site.data.portfolio.last %}
+<div class="tmc-cell__divider mdc-layout-grid__cell--span-12"></div>
+{% endif %}
 {% endfor %}

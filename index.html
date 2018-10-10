@@ -23,7 +23,7 @@
 </head>
 
 <body class="mdc-typography">
-  <div class="tmc-top-bar-container">
+  <div class="tmc-top-bar-container mdc-elevation--z6">
     {% include header.html %}
     <div class="mdc-tab-bar" role="tablist">
       <div class="mdc-tab-scroller">
@@ -83,7 +83,7 @@
     <div class="tmc-content tmc-content__blog tmc-hide mdc-layout-grid__inner">
         {% include blog.html %}
     </div>
-    <div class="tmc-content tmc-content__blog tmc-hide mdc-layout-grid__inner">
+    <div class="tmc-content tmc-content__contact tmc-hide mdc-layout-grid__inner">
         {% include contact.html name=user.first upwork=user.upwork linkedin=user.linkedin email=user.email github=user.github %}
     </div>
   </div>
