@@ -43,35 +43,26 @@ h3 {
 }
 
 .tmc-portfolio__project-image-container {
-    height: 100px;
+    height: 64px;
     width: 100%;
+    max-width: 150px;
 }
 
 .tmc-portfolio__project-image-container > img {
     height: 100%;
     width: 100%;
     object-fit: contain;
+    object-position: left;
 }
 
-.tmc-portfolio__project-task-image-container {
-    flex-grow: 0;
-    flex-shrink: 0;
-    width: 33%;
-    max-height: 300px;
-    flex-grow: 0;
-}
-
-.tmc-portfolio__project-task-image-container > img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+.tmc-portfolio__project-task {
+    flex-direction: row;
 }
 
 .tmc-portfolio__project-task-description {
     width: 0px;
     flex-grow: 1;
 }
-
 
 .tmc-content__blog {
     padding: 24px;
@@ -393,9 +384,7 @@ button.mdc-tab:nth-child(2) {
         justify-content: left;
     }
 
-    .tmc-portfolio__project-task {
-        flex-direction: row-reverse;
-    }
+    
 }
 
 /* desktop */
