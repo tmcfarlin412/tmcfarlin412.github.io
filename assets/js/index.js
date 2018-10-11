@@ -11,8 +11,6 @@ function selectTab(tabIndex) {
             window.history.pushState({tab: 1}, "", "?tab=portfolio");
         } else if (tabIndex== 2) {
             window.history.pushState({tab: 2}, "", "?tab=blog ");
-        } else if (tabIndex == 3) {
-            window.history.pushState({tab: 2}, "", "?tab=contact ");
         } else {
             window.history.pushState({tab: 0}, "", "?tab=intro");
         }
@@ -131,8 +129,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         styleTabSelected(1)  
     } else if (queryParamTab == 'blog') {
         styleTabSelected(2)
-    } else if (queryParamTab == 'contact') {
-        styleTabSelected(3)
     } else {
         styleTabSelected(0)
     }

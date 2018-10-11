@@ -321,28 +321,20 @@ button.mdc-tab:nth-child(2) {
     padding: 2px;
 }
 
-#tmc-free-consultation {
-    --mdc-theme-primary: var(--tmc-theme-red, black);
-    color: white;
-    margin-top: 8px;
-}
-
 #tmc-hire-upwork {
     --mdc-theme-primary: var(--upwork-green, black);
     color: white;
     margin-top: 8px;
 }
 
-#tmc-hire-here {
-    --mdc-theme-primary: var(--tmc-theme-blue, black);
+#tmc-free-consultation {
+    --mdc-theme-primary: var(--tmc-theme-red, black);
     color: white;
-    font-weight: bold;
     margin-top: 8px;
 }
 .tmc-intro__hi-container {
     margin-top: -124px;
     padding: 0px;
-    text-align: center;
 }
 
 .tmc-intro__hi-container > * {
@@ -354,19 +346,14 @@ button.mdc-tab:nth-child(2) {
     visibility: hidden;
 }
 
-@media (min-width: 468px) {
+@media (min-width: 586px) {
     .tmc-intro__profile-triangle {
         visibility: visible;
     }
 
     .tmc-intro__hi-container {
-        text-align: left;
         margin-top: 86px;
         background: inherit;
-    }
-    .tmc-intro__hi-container > * {
-        margin-left: 0px;
-        margin-right: 0px;
     }
 }
 
