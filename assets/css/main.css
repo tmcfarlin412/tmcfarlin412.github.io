@@ -46,21 +46,17 @@ h3 {
 
 .tmc-portfolio__card--content {
     padding: 16px;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    position: relative;
 }
 
-.tmc-portfolio__card--summary {
-    width: 100%;
-}
-
-.tmc-portfolio__card--tasks {
-    width: 100%;
+.tmc-portfolio__card--technologies {
+    word-break: break-word;
 }
 
 .tmc-portfolio__card--content > * {
     padding: 16px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .tmc-portfolio__card--header--arrow {
@@ -528,15 +524,29 @@ button.mdc-tab:nth-child(2) {
     }
 
     .tmc-portfolio__card--content {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "title title"
+            "summary tasks"
+            "summary technologies";
     }
     
-    .tmc-portfolio__card--summary {
-        width: 33%;
+    .tmc-portfolio__card--title {
+        grid-area: title;
     }
 
+    .tmc-portfolio__card--summary {
+        grid-area: summary;
+    }
+    
     .tmc-portfolio__card--tasks {
-        width: 67%;
+        grid-area: tasks;
+    }
+    
+    .tmc-portfolio__card--technologies {
+        grid-area: technologies;
     }
 }
 
@@ -560,11 +570,7 @@ button.mdc-tab:nth-child(2) {
         padding: 24px;
     }
 
-    .tmc-portfolio__card--summary {
-        width: 30%;
-    }
-
-    .tmc-portfolio__card--tasks {
-        width: 70%;
+    .tmc-portfolio__card--content {
+        grid-template-columns: 40% 60%;
     }
   }
