@@ -130,11 +130,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // Testimonials
     testimonialCount = document.querySelectorAll('.tmc-testimonial').length;
-    document.querySelector('.tmc-row-testimonials .tmc-arrow-left').addEventListener('click', function() {
+    document.querySelector('.tmc-row__testimonials .tmc-arrow-left').addEventListener('click', function() {
         showPreviousTestimonial()
     })
 
-    document.querySelector('.tmc-row-testimonials .tmc-arrow-right').addEventListener('click', function() {
+    document.querySelector('.tmc-row__testimonials .tmc-arrow-right').addEventListener('click', function() {
         showNextTestimonial()
     })
 });

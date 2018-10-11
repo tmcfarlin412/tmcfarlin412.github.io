@@ -311,7 +311,7 @@ button.mdc-tab:nth-child(2) {
     max-width: 500px;
 }
 
-.tmc-row-intro {
+.tmc-row__intro {
     padding: 24px;
 }
 
@@ -395,7 +395,7 @@ button.mdc-tab:nth-child(2) {
     color: white !important;
 }
 
-.tmc-row-testimonials {
+.tmc-row__testimonials {
     min-height: 400px;
     display: flex;
     justify-content: space-between;
@@ -417,7 +417,7 @@ button.mdc-tab:nth-child(2) {
     background-size: cover;
 }
 
-.tmc-row-testimonials .tmc-arrow-left, .tmc-row-testimonials .tmc-arrow-right  {
+.tmc-row__testimonials .tmc-arrow-left, .tmc-row__testimonials .tmc-arrow-right  {
     cursor: pointer;
 }
 

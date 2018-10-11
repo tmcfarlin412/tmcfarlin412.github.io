@@ -1,4 +1,4 @@
-<div class="tmc-cell__intro--profile tmc-row-intro mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+<div class="tmc-cell__intro--profile tmc-row tmc-row__intro mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
     <div class="tmc-intro__profile--picture-container">
         <img class="tmc-intro__profile-triangle" src="/assets/images/blue.svg">
         <img class="tmc-intro__profile-picture circle mdc-elevation--z6" src="/assets/images/profile.png">
@@ -12,7 +12,7 @@
     </div>
 </div>
 <div class="tmc-cell__divider mdc-layout-grid__cell mdc-layout-grid__cell--span-12"></div>
-<div class="mdc-layout-grid__inner tmc-intro-row-odd mdc-layout-grid__cell mdc-layout-grid__cell--span-12 tmc-row-intro tmc-row-intro__pitch ">
+<div class="tmc-intro__pitch-card mdc-layout-grid__inner tmc-intro-row-odd mdc-layout-grid__cell mdc-layout-grid__cell--span-12 tmc-row tmc-row__intro tmc-row__intro__pitch ">
 
     <h2 class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">When you hire me, you get
         <i>me</i>
@@ -27,57 +27,46 @@
         <div class="tmc-intro__one-contact mdc-card__media mdc-card__media--16-9"></div>
         <div class="tmc-intro-card__primary">
             <h3>One contact</h3>
-            <p>You communicate directly with me, every time</p>
+            <p>You will communicate directly with me</p>
         </div>
     </div>
     <div class="mdc-card mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-elevation--z6">
         <div class="tmc-intro__bugs mdc-card__media mdc-card__media--16-9"></div>
         <div class="tmc-intro-card__primary">
             <h3>Bug exterminator</h3>
-            <p>I quickly diagnose and fix issues at their root</p>
+            <p>I am quick to diagnose and fix issues</p>
         </div>
     </div>
     <div class="mdc-card mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-elevation--z6">
         <div class="tmc-intro__solutions mdc-card__media mdc-card__media--16-9"></div>
         <div class="tmc-intro-card__primary">
-            <h3>Many solutions</h3>
-            <p>Omnichannel and device-agnostic… I'll find the solution that fits your business</p>
+            <h3>No platform left behind</h3>
+            <p>I'm here to solve <i>all</i> of your software problems</p>
         </div>
     </div>
 </div>
-<div class="tmc-row-testimonials tmc-intro-row-even mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-elevation--z6">
+
+<div class="tmc-row tmc-row__testimonials tmc-intro-row-even mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-elevation--z6">
     <div class="tmc-arrow-left"></div>
-    <div class="tmc-testimonial tmc-testimonial__raya tmc-show">
+    {% for testimonial in site.data.testimonials %}
+    <div class="tmc-testimonial {% if testimonial == site.data.testimonials.first %}tmc-show{% else %}tmc-hide{% endif %}">
         <div class="tmc-testimonial__profile">
-            <div class="tmc-testimonial__profile-image"></div>
+            <div class="tmc-testimonial__profile-image" style="background-image: url({{ testimonial.imageUrl }});"></div>
             <div class="tmc-testimonial__profile-text">
-                    <span>Raya Khashab<br>CEO at <a href="https://ezclocker.com" target="_blank">ezClocker</a>
+                    <span>{{ testimonial.name }}<br>{{ testimonial.title }} at <a href="{{ testimonial.companyUrl }}" target="_blank">{{ testimonial.companyName }}</a>
                     </span>
                 </div>
         </div>
         <div class="tmc-testimonial__quote">
                 <span>
-                    "It was a pleasure to work with Tom. He is a highly experienced Android developer, great communicator where he keeps you updated on the progress of your project and gives you recommendations on how to improve the app. Highly recommend and will hire again for our next project."
+                    "{{ testimonial.quote }}"
                 </span>
             </div>
     </div>
-    <div class="tmc-testimonial tmc-testimonial__alec tmc-hide">
-            <div class="tmc-testimonial__profile">
-                <div class="tmc-testimonial__profile-image"></div>
-                <div class="tmc-testimonial__profile-text">
-                        <span>Alec Davis<br>Product Manager, Customer Experience at <a href="https://www.getmira.com" target="_blank">Mira</a>
-                        </span>
-                    </div>
-            </div>
-            <div class="tmc-testimonial__quote">
-                    <span>
-                        "I had the pleasure of working closely with Tom on several web development projects during our time at Promantus. Tom is invariably a team player, a quick learner, and a curious and optimistic guy. When he doesn't know the answer to a problem, he never hesitates to dive in, learning as much as he can in a short period of time and coming up with a plan to solve it. As a designer, I can also attest to Tom's attention to detail in implementing software designs. Would love to collaborate again in the future."
-                    </span>
-                </div>
-        </div>
+    {% endfor %}
     <div class="tmc-arrow-right"></div>
 </div>
-<div class="mdc-layout-grid__inner tmc-intro-row-odd mdc-layout-grid__cell mdc-layout-grid__cell--span-12 tmc-row-intro">
+<div class="tmc-row tmc-row__intro mdc-layout-grid__inner tmc-intro-row-odd mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
     <h2 class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">Expertise</h2>
     <div class="tmc-technologies mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
         {% for technology in site.data.technologies %}
@@ -85,4 +74,3 @@
         {% endfor %}
     </div>
 </div>
-<div class="tmc-cell__divider mdc-layout-grid__cell--span-12"></div>
