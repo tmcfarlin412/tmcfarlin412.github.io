@@ -54,9 +54,21 @@ h3 {
     word-break: break-word;
 }
 
+.tmc-tag {
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid rgb(200, 200, 200);
+    padding: 2px 4px;
+    margin: 2px 4px;
+}
+
+.tmc-tag.tmc-active {
+    background-color: var(--tmc-theme-blue, black);
+    color: white;
+}
+
 .tmc-portfolio__card--content > * {
     padding: 16px;
-    /* width: 100%; */
 }
 
 .tmc-portfolio__card--header--arrow {
@@ -398,6 +410,10 @@ button.mdc-tab:nth-child(2) {
 .tmc-intro-card__primary p {
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+#tmc-intro-view-my-portfolio {
+    text-align: center;
 }
 
 /* TESTIMONIAL */

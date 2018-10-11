@@ -27,11 +27,12 @@
         </div>
         <div class="tmc-portfolio__card--technologies">
             <h3>Technologies</h3>
-            {% for technology in project.technologies %}
+            {% assign technologies = project.technologies | split: "," %}
             <div class="tmc-portfolio__card--technology-list">
-                <div class="tmc-portfolio__card--technology-list-item">{{ technology }}</div>
+                {% for technology in technologies %}
+                <div class="tmc-tag tmc-portfolio__card--technology-list-item" data-technology="{{ technology }}">{{ technology }}</div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
 </div>

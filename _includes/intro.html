@@ -70,7 +70,8 @@
     <h2 class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">Expertise</h2>
     <div class="tmc-technologies mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
         {% for technology in site.data.technologies %}
-            <div>{{ technology }}</div>
+        <div class="tmc-tag">{{ technology }}</div>
         {% endfor %}
     </div>
+    <a id="tmc-intro-view-my-portfolio" href="?tab=portfolio" class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">View my portfolio</a>
 </div>
