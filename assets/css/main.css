@@ -1,6 +1,11 @@
 body {
     margin: 0px;
     background: rgba(87, 132, 195, 0.1);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
 }
 
 .tmc-content__intro h2 {
@@ -35,6 +40,62 @@ h3 {
   cursor: pointer;
 }
 
+.tmc-portfolio__card {
+    background: white;
+}
+
+.tmc-portfolio__card--content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tmc-portfolio__card--summary {
+    width: 100%;
+}
+
+.tmc-portfolio__card--tasks {
+    width: 100%;
+}
+
+.tmc-portfolio__card--content > * {
+    padding: 16px;
+    width: 100%;
+}
+
+.tmc-portfolio__card--header--arrow {
+    height: 24px;
+    width: 24px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.tmc-portfolio__card.tmc-collapse .tmc-portfolio__card--content {
+    display: none;
+}
+
+.tmc-portfolio__card--header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.tmc-portfolio__card--header * {
+    pointer-events: none;
+}
+
+.tmc-portfolio__card.tmc-collapse .tmc-portfolio__card--header--arrow {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
 .tmc-portfolio__project-task {
     display: flex;
     flex-direction: column;
@@ -44,6 +105,7 @@ h3 {
     height: 64px;
     width: 100%;
     max-width: 150px;
+    margin-left: 16px;
 }
 
 .tmc-portfolio__project-image-container > img {
@@ -464,6 +526,18 @@ button.mdc-tab:nth-child(2) {
         width: 128px;
         height: 128px;
     }
+
+    .tmc-portfolio__card--content {
+        flex-direction: row;
+    }
+    
+    .tmc-portfolio__card--summary {
+        width: 33%;
+    }
+
+    .tmc-portfolio__card--tasks {
+        width: 67%;
+    }
 }
 
 /* desktop */
@@ -484,5 +558,13 @@ button.mdc-tab:nth-child(2) {
 
     .tmc-row {
         padding: 24px;
+    }
+
+    .tmc-portfolio__card--summary {
+        width: 30%;
+    }
+
+    .tmc-portfolio__card--tasks {
+        width: 70%;
     }
   }

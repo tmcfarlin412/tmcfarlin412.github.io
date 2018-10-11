@@ -74,6 +74,23 @@ function showPreviousTestimonial() {
     refreshTestimonials()
 }
 
+function showProject(projectNode) {
+    projectNode.classList.remove('tmc-collapse')
+}
+
+function hideProject(projectNode) {
+    projectNode.classList.add('tmc-collapse')
+}
+
+function toggleProjectVisibility(projectId) {
+    var projectNode = document.getElementById(projectId)
+    if (projectNode.classList.contains('tmc-collapse')) {
+        showProject(projectNode)
+    } else {
+        hideProject(projectNode)
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function (event) {
 
     // Button url handler
@@ -137,4 +154,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.querySelector('.tmc-row__testimonials .tmc-arrow-right').addEventListener('click', function() {
         showNextTestimonial()
     })
+
+    /*
+
+    PORTFOLIO
+
+    */
+
+   var projectHeaders = document.querySelectorAll('.tmc-portfolio__card--header')
+   
+   for (var i = 0; i < projectHeaders.length; i++) {
+        projectHeaders[i].addEventListener('click', function(e) {
+            toggleProjectVisibility(e.target.getAttribute('data-project-id'))
+        })
+        // hide
+        hideProject(document.getElementById(projectHeaders[i].getAttribute('data-project-id')));
+   }
 });

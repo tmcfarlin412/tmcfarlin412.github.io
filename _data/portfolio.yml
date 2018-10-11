@@ -1,4 +1,5 @@
 - ezclocker:
+  id: ez
   name: ezClocker
   url: https://ezclocker.com
   image: /assets/images/ezclocker/ezclocker.png
@@ -14,6 +15,7 @@
       name: Google location services
       summary: ezClocker uses Google Maps and location services to gather and display data; it is crucial that this data is accurate. The Android application was updated to use the latest Google Services to ensure the latest technology was available to end-users. A custom location gathering algorithm was developed improve the accuracy of the location coordinates and reduce battery consumption.
 - cc:
+  id: cc
   name: Classroom Cache
   url: https://classroomcache.com
   image: /assets/images/cc/cc.jpg

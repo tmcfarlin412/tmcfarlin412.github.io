@@ -1,29 +1,28 @@
 {% for project in site.data.portfolio %}
 <div class="tmc-space-desktop mdc-layout-grid__cell--span-1-desktop"></div>
-<div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-tablet mdc-layout-grid__cell--span-2-desktop">
-    <div class="tmc-portfolio__project-image-container">
-        <img class="tmc-portfolio__project-image" src="{{ project.image }}" alt="{{ project.name }}">
+<div id="project-{{ project.id }}" class="tmc-collapse tmc-portfolio__card mdc-elevation--z6 mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-10-desktop mdc-layout-grid__inner">
+    <div class="tmc-portfolio__card--header mdc-ripple-surface mdc-layout-grid__cell--span-12" data-project-id="project-{{ project.id }}">
+        <img class="tmc-portfolio__card--header--arrow" src="/assets/images/arrow-right-black.png">
+        <div class="tmc-portfolio__project-image-container">
+            <img class="tmc-portfolio__project-image" src="{{ project.image }}" alt="{{ project.name }}">
+        </div>
+    </div>
+    <div class="tmc-portfolio__card--content mdc-layout-grid__cell--span-12">
+        <div class="tmc-portfolio__card--summary">
+            <h3>Summary</h3>
+            <p>{{ project.summary }}</p>
+        </div>
+        <div class="tmc-portfolio__card--tasksmdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-5-tablet mdc-layout-grid__cell--span-8-desktop">
+            {% for task in project.tasks %}
+                <div class="tmc-portfolio__project-task">
+                    <div class="tmc-portfolio__project-task-description">
+                        <h3>{{ task.name }}</h3>
+                        <p>{{ task.summary }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
-<div class="tmc-space-tablet tmc-space-desktop mdc-layout-grid__cell--span-5-tablet mdc-layout-grid__cell--span-8-desktop"></div>
 <div class="tmc-space-desktop mdc-layout-grid__cell--span-1-desktop"></div>
-<div class="tmc-space-desktop mdc-layout-grid__cell--span-1-desktop"></div>
-<div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-tablet mdc-layout-grid__cell--span-3-desktop">
-    <h3>Summary</h3>
-    <p>{{ project.summary }}</p>
-</div>
-<div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-5-tablet mdc-layout-grid__cell--span-7-desktop">
-    {% for task in project.tasks %}
-        <div class="tmc-portfolio__project-task">
-            <div class="tmc-portfolio__project-task-description">
-                <h3>{{ task.name }}</h3>
-                <p>{{ task.summary }}</p>
-            </div>
-        </div>
-    {% endfor %}
-</div>
-<div class="tmc-space-desktop mdc-layout-grid__cell--span-1-desktop"></div>
-{% if project != site.data.portfolio.last %}
-<div class="tmc-cell__divider mdc-layout-grid__cell--span-12"></div>
-{% endif %}
 {% endfor %}
