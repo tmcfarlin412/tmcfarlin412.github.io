@@ -3,6 +3,7 @@
   name: tmcfarlin412.github.io (this website)
   url: https://tmcfarlin412.github.io
   image: /assets/images/tmcfarlin412/logo.png
+  timeline: Sept - Oct 2018
   summary: This website is a statically generated site built with Jekyll and hosted on Github Pages. It's purpose is to showcase my experience and help you to better understand my skillset.
   technologies: HTML,CSS,JavaScript,Git,Android,YAML,Material Design,Google Integrations,Jekyll,Design,NodeJS,NVM,Ruby,RVM,webpack,Docusaurus
   tasks:
@@ -15,28 +16,12 @@
     - 3:
       name: Project management and development 
       summary: "Tickets for the development of the website were created, and a simple Gantt chart was generated to ensure that prioritized items were developed. Over the course of two weeks, the website was developed… You're looking at it right now!"
-- ezclocker:
-  id: ez
-  name: ezClocker
-  url: https://ezclocker.com
-  image: /assets/images/ezclocker/ezclocker.png
-  summary: ezClocker is a timesheet solution for business owners. It simplifies the clocking in/out process with Android and iOS applications. Learn more about the ezClocker product <a href="https://ezclocker.com" target="_blank">here</a>.<br><br>Crash fixes, performance improvements, data gathering optimization, and front-end updates were made to the Android application.
-  technologies: Git,Android,Java,XML,Google Location Services for Android,Google Cloud APIs,Google Integrations
-  tasks:
-    - 1:
-      name: Performance optimization
-      summary: When a phone application conducts unnecessary work in the background, the user suffers from battery loss and laggy interfaces. An audit of the ezClocker was completed to find and resolve inefficiencies that improve the user experience.
-    - 2:
-      name: Crash fixes
-      summary: Out of memory errors can be caused by just a few misplaced characters in code. Through debugging and evaluation of the memory allocation throughout the app lifecycle, memory leaks were discovered and patched.
-    - 3:
-      name: Google location services
-      summary: ezClocker uses Google Maps and location services to gather and display data; it is crucial that this data is accurate. The Android application was updated to use the latest Google Services to ensure the latest technology was available to end-users. A custom location gathering algorithm was developed improve the accuracy of the location coordinates and reduce battery consumption.
 - cc:
   id: cc
   name: Classroom Cache
   url: https://classroomcache.com
   image: /assets/images/cc/cc.jpg
+  timeline: July - Present
   summary: Classroom Cache is a suite of Chrome Extensions and Chrome Apps that enables students to complete their Google Classroom homework without connection to the Internet. Learn more about the Classroom Cache product <a href="https://classroomcache.com" target="_blank">here</a>.<br><br>After initial consultation, a technical blueprint was formulated and Chrome Apps and Extensions were developed.
   technologies: Google Classroom APIs,Google Drive APIs,Chrome Extension,Chrome App,HTML,CSS,JavaScript,Git,Material Design,Google Integrations,Google Cloud APIs,Design
   tasks:
@@ -49,3 +34,21 @@
     - studendExt:
       name: Chrome App and Chrome Extension for Students
       summary: A Chrome App and a Chrome Extension were developed to facilitate background download of Google Classroom content to student devices. If a teacher marked an assignment as "Cache offline" the Chrome App and Extension work together to download Google files (Docs, Sheets, Slides), videos, images, and any other file content to local storage so that students can view the materials without the Internet. Files that are edited by students remain in sync offline and with Google Drive.
+- ezclocker:
+  id: ez
+  name: ezClocker
+  url: https://ezclocker.com
+  image: /assets/images/ezclocker/ezclocker.png
+  timeline: May - Oct 2018
+  summary: ezClocker is a timesheet solution for business owners. It simplifies the clocking in/out process with Android and iOS applications. Learn more about the ezClocker product <a href="https://ezclocker.com" target="_blank">here</a>.<br><br>Crash fixes, performance improvements, data gathering optimization, and front-end updates were made to the Android application.
+  technologies: Git,Android,Java,XML,Google Location Services for Android,Google Cloud APIs,Google Integrations
+  tasks:
+    - 1:
+      name: Performance optimization
+      summary: When a phone application conducts unnecessary work in the background, the user suffers from battery loss and laggy interfaces. An audit of the ezClocker was completed to find and resolve inefficiencies that improve the user experience.
+    - 2:
+      name: Crash fixes
+      summary: Out of memory errors can be caused by just a few misplaced characters in code. Through debugging and evaluation of the memory allocation throughout the app lifecycle, memory leaks were discovered and patched.
+    - 3:
+      name: Google location services
+      summary: ezClocker uses Google Maps and location services to gather and display data; it is crucial that this data is accurate. The Android application was updated to use the latest Google Services to ensure the latest technology was available to end-users. A custom location gathering algorithm was developed improve the accuracy of the location coordinates and reduce battery consumption.

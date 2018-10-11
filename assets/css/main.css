@@ -123,6 +123,14 @@ h3 {
     object-position: left;
 }
 
+.tmc-portfolio__card--title {
+    margin: 0 0;
+}
+
+.tmc-portfolio__project-timeline {
+    font-style: italic;
+}
+
 .tmc-portfolio__project-task {
     flex-direction: row;
 }
@@ -545,12 +553,17 @@ button.mdc-tab:nth-child(2) {
         grid-template-rows: auto auto;
         grid-template-areas: 
             "title title"
+            "timeline timeline"
             "summary tasks"
             "summary technologies";
     }
     
     .tmc-portfolio__card--title {
         grid-area: title;
+    }
+
+    .tmc-portfolio__project-timeline {
+        grid-area: timeline;
     }
 
     .tmc-portfolio__card--summary {
