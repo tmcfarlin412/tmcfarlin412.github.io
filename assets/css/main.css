@@ -42,6 +42,7 @@ h3 {
 
 .tmc-portfolio__card {
     background: white;
+    border-radius: 4px;
 }
 
 .tmc-portfolio__card--content {
