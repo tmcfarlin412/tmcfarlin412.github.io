@@ -14,7 +14,7 @@ Exceeding Google API quotas can break your app. Luckily, there are a few simple 
 |Queries per 100 seconds per user|1,000|
 |Queries per 100 seconds|10,000|
 
-if you exceed these quotas, Google will not deliver the requested data associated with the API call. Instead, you will receive an error message as such
+if you exceed these quotas, Google will not deliver the requested data associated with the API call. Instead, you will receive an error message:
 
 ```
 {
@@ -23,12 +23,12 @@ if you exceed these quotas, Google will not deliver the requested data associate
    {
     "domain": "usageLimits",
     "reason": "userRateLimitExceeded",
-    "message": "User Rate Limit Exceeded. Rate of requests for user exceed configured project quota. You may consider re-evaluating expected per-user traffic to the API and adjust project quota limits accordingly. You may monitor aggregate quota usage and adjust limits in the API Console: https://console.developers.google.com/apis/api/drive.googleapis.com/quotas?project=143041290413",
-    "extendedHelp": "https://console.developers.google.com/apis/api/drive.googleapis.com/quotas?project=143041290413"
+    "message": "User Rate Limit Exceeded. Rate of requests for user exceed configured project quota. You may consider re-evaluating expected per-user traffic to the API and adjust project quota limits accordingly. You may monitor aggregate quota usage and adjust limits in the API Console: https://console.developers.google.com/apis/api/drive.googleapis.com/quotas?project=1029273028",
+    "extendedHelp": "https://console.developers.google.com/apis/api/drive.googleapis.com/quotas?project=1029273028"
    }
   ],
   "code": 403,
-  "message": "User Rate Limit Exceeded. Rate of requests for user exceed configured project quota. You may consider re-evaluating expected per-user traffic to the API and adjust project quota limits accordingly. You may monitor aggregate quota usage and adjust limits in the API Console: https://console.developers.google.com/apis/api/drive.googleapis.com/quotas?project=143041290413"
+  "message": "User Rate Limit Exceeded. Rate of requests for user exceed configured project quota. You may consider re-evaluating expected per-user traffic to the API and adjust project quota limits accordingly. You may monitor aggregate quota usage and adjust limits in the API Console: https://console.developers.google.com/apis/api/drive.googleapis.com/quotas?project=1029273028"
  }
 }
 
@@ -36,7 +36,10 @@ if you exceed these quotas, Google will not deliver the requested data associate
 
 How to you mitigate these quota issues? 
 
-Handling the Application quotas (Queries per day and Queries per 100 seconds) is a bit complex, as you must either devise a method for separate application instances to coordinate their query count. For example, one could build a server through which all requests are made. This server would ensure these quotas are not exceeded. Another method of mitigation is to retry the request after a waiting period. This is not ideal, but it is better than no recovery.
+To avoid surpassing the Queries per day and Queries per 100 seconds, separate application instances to coordinate their query count. One way to coordinate this would be to create 2 TBD
+
+
+ track using local storage the API calls made by the application. Every, say 100 queries made, the application could update a server which tracks these quotas. through which all requests are made. This server would ensure these quotas are not exceeded. Another method of mitigation is to retry the request after a waiting period. This is not ideal, but it is better than no recovery.
 
 The remainder of this post focuses on handling "Queries per 100 seconds per user" quota, as this can be implemented client-side. 
 
