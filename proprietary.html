@@ -1,0 +1,36 @@
+---
+---
+
+{% assign user = site.data.people[page.user] %}
+
+<html>
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#fc696e">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <title>Tom McFarlin Consulting</title>
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/header.js"></script>
+</head>
+
+<body class="mdc-typography">
+  <div class="tmc-top-bar-container mdc-elevation--z6">
+    {% include header.html %}
+  </div>
+  <h1 class>Cannot redirect to content</h1>
+  <p>
+      Unfortunately, I am not permissed to navigate you to the content that you expected. If you have any further questions, feel free to email me at {{ user.email }}
+  </p>
+  <div class="tmc-cell__divider mdc-layout-grid__cell--span-12"></div>
+  {% include footer.html name=user.first upwork=user.upwork linkedin=user.linkedin email=user.email github=user.github %}
+</body>
+
+</html>

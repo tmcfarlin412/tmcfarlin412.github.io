@@ -1,3 +1,21 @@
+- taxFunctions:
+  id: taxFunctions
+  name: Tax functions
+  url: https://chrome.google.com/webstore/detail/tax-functions/nocofnnmmigpdafiopnomcnblhmgjlmh
+  image: /assets/images/taxFunctions/logo128.png
+  timeline: Oct 2018 - Present
+  summary: "Tax functions is a Google Sheets add-on that adds tax-related functions to spreadsheets. Add these functions to Google Sheets by navigating to a Sheet, click the menu \"Add-ons,\" click \"Get add ons,\" and search for \"Tax functions\". You may view in the Chrome Web Store and add it to a new Sheet <a href=\"https://chrome.google.com/webstore/detail/tax-functions/nocofnnmmigpdafiopnomcnblhmgjlmh\" target=\"_blank\">here</a>."
+  technologies: JS,Google Apps Scripts,Chrome Web Store,Google Sheets
+  tasks:
+    - 1:
+      name: Research, architecture, and test cases
+      summary: "Documentation about Google Apps Scripts was read and sample applications were developed. Distribution methods were learned and troubleshot. Functionality was identified and translated to exposed custom Sheets function templates. In order to robustly test the functions, use-cases were identified and a test spreadsheet was developed to run unit tests on all exposed functions."
+    - 2:
+      name: Development and testing
+      summary: "Exposed functions were developed, tested, and documented. The product was uploaded to the Chrome Web Store and tested by a private Google Group."
+    - 3:
+      name: Design, marketing, and launch
+      summary: "Chrome Web Store content was created, which included product title, descriptions, logos. The logo (bar graph) was developed and iterated over a few cycles to ensure that it fit the required sizes (32x32 and 128x128) while conveying the desired message that this product relates to tax calculations. The product was uploaded to the Chrome Web Store and exposed publically."
 - tmcfarlin412.gihub.io:
   id: tmcfarlin412
   name: tmcfarlin412.github.io (this website)
@@ -18,11 +36,11 @@
       summary: "Tickets for the development of the website were created, and a simple Gantt chart was generated to ensure that prioritized items were developed. Over the course of two weeks, the website was developed… You're looking at it right now!"
 - cc:
   id: cc
-  name: Classroom Cache
-  url: https://classroomcache.com
-  image: /assets/images/cc/cc.jpg
+  name: Classroom Sync
+  url: https://tmcfarlin.github.io/proprietary.html
+  image: /assets/images/cc/cc_ph.png
   timeline: July - Present
-  summary: Classroom Cache is a suite of Chrome Extensions and Chrome Apps that enables students to complete their Google Classroom homework without connection to the Internet. Learn more about the Classroom Cache product <a href="https://classroomcache.com" target="_blank">here</a>.<br><br>After initial consultation, a technical blueprint was formulated and Chrome Apps and Extensions were developed.
+  summary: Classroom Sync is a suite of Chrome Extensions and Chrome Apps that enables students to complete their Google Classroom homework without connection to the Internet.<br><br>After initial consultation, a technical blueprint was formulated and Chrome Apps and Extensions were developed.
   technologies: Google Classroom APIs,Google Drive APIs,Chrome Extension,Chrome App,HTML,CSS,JavaScript,Git,Material Design,Google Integrations,Google Cloud APIs,Design
   tasks:
     - consultation:
@@ -34,21 +52,21 @@
     - studendExt:
       name: Chrome App and Chrome Extension for Students
       summary: A Chrome App and a Chrome Extension were developed to facilitate background download of Google Classroom content to student devices. If a teacher marked an assignment as "Cache offline" the Chrome App and Extension work together to download Google files (Docs, Sheets, Slides), videos, images, and any other file content to local storage so that students can view the materials without the Internet. Files that are edited by students remain in sync offline and with Google Drive.
-- ezclocker:
+- ez:
   id: ez
-  name: ezClocker
-  url: https://ezclocker.com
-  image: /assets/images/ezclocker/ezclocker.png
+  name: simpleTocker
+  url: https://tmcfarlin.github.io/proprietary.html
+  image: /assets/images/ez/ez_ph.png
   timeline: May - Oct 2018
-  summary: ezClocker is a timesheet solution for business owners. It simplifies the clocking in/out process with Android and iOS applications. Learn more about the ezClocker product <a href="https://ezclocker.com" target="_blank">here</a>.<br><br>Crash fixes, performance improvements, data gathering optimization, and front-end updates were made to the Android application.
+  summary: simpleTocker is a timesheet solution for business owners. It simplifies the clocking in/out process with Android and iOS applications.<br><br>Crash fixes, performance improvements, data gathering optimization, and front-end updates were made to the Android application.
   technologies: Git,Android,Java,XML,Google Location Services for Android,Google Cloud APIs,Google Integrations
   tasks:
     - 1:
       name: Performance optimization
-      summary: When a phone application conducts unnecessary work in the background, the user suffers from battery loss and laggy interfaces. An audit of the ezClocker was completed to find and resolve inefficiencies that improve the user experience.
+      summary: When a phone application conducts unnecessary work in the background, the user suffers from battery loss and laggy interfaces. An audit of the Android app was completed to find and resolve inefficiencies that improve the user experience.
     - 2:
       name: Crash fixes
       summary: Out of memory errors can be caused by just a few misplaced characters in code. Through debugging and evaluation of the memory allocation throughout the app lifecycle, memory leaks were discovered and patched.
     - 3:
       name: Google location services
-      summary: ezClocker uses Google Maps and location services to gather and display data; it is crucial that this data is accurate. The Android application was updated to use the latest Google Services to ensure the latest technology was available to end-users. A custom location gathering algorithm was developed improve the accuracy of the location coordinates and reduce battery consumption.
+      summary: simpleTocker uses Google Maps and location services to gather and display data; it is crucial that this data is accurate. The Android application was updated to use the latest Google Services to ensure the latest technology was available to end-users. A custom location gathering algorithm was developed improve the accuracy of the location coordinates and reduce battery consumption.

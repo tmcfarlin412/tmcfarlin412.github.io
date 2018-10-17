@@ -52,17 +52,43 @@
     {% for testimonial in site.data.testimonials %}
     <div class="tmc-testimonial {% if testimonial == site.data.testimonials.first %}tmc-show{% else %}tmc-hide{% endif %}">
         <div class="tmc-testimonial__profile">
-            <div class="tmc-testimonial__profile-image" style="background-image: url({{ testimonial.imageUrl }});"></div>
+            {% if testimonial.imageUrl == "" or testimonial.imageUrl == nil %}
+              <!-- no image, hide it -->
+              <div class="tmc-testimonial__profile-image tmc-hide"></div>
+            {% else %}
+              <div class="tmc-testimonial__profile-image" style="background-image: url({{ testimonial.imageUrl }});"></div>
+            {% endif %}
             <div class="tmc-testimonial__profile-text">
-                    <span>{{ testimonial.name }}<br>{{ testimonial.title }} at <a href="{{ testimonial.companyUrl }}" target="_blank">{{ testimonial.companyName }}</a>
-                    </span>
-                </div>
-        </div>
-        <div class="tmc-testimonial__quote">
                 <span>
-                    "{{ testimonial.quote }}"
+                {% if testimonial.name == "" or testimonial.name == nil %}
+                  <!-- don't print name -->
+                {% else %}
+                  {{ testimonial.name }}<br>
+                {% endif %}
+
+                {% if testimonial.title == "" or testimonial.title == nil %}
+                  <!-- don't print title -->
+                {% else %}
+                  {{ testimonial.title }}
+                {% endif %}
+
+                {% if testimonial.companyName == "" or testimonial.companyName == nil %}
+                  <!-- no company name to print -->
+                {% else if testimonial.companyUrl == "" or testimonial.companyUrl == nil %}
+                  <!-- there is a company name, but no url -->
+                  at {{ testimonial.companyName }}
+                {% else %}
+                  <!-- there is a company name and url -->
+                  at <a href="{{ testimonial.companyUrl }}" target="_blank">{{ testimonial.companyName }}</a>
+                {% endif %}
                 </span>
             </div>
+        </div>
+        <div class="tmc-testimonial__quote">
+            <span>
+                "{{ testimonial.quote }}"
+            </span>
+        </div>
     </div>
     {% endfor %}
     <div class="tmc-arrow-right"></div>
