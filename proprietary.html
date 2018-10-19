@@ -25,10 +25,18 @@
   <div class="tmc-top-bar-container mdc-elevation--z6">
     {% include header.html %}
   </div>
-  <h1 class>Cannot redirect to content</h1>
-  <p>
-      Unfortunately, I am not permissed to navigate you to the content that you expected. If you have any further questions, feel free to email me at {{ user.email }}
-  </p>
+  <div class="tmc-grid-root mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+        <div class="tmc-space-desktop mdc-layout-grid__cell--span-1"></div>
+        <h1 class="mdc-layout-grid__cell--span-10">Cannot redirect to content</h1>
+        <div class="tmc-space-desktop mdc-layout-grid__cell--span-1"></div>
+        <div class="tmc-space-desktop mdc-layout-grid__cell--span-1"></div>
+        <p class="mdc-layout-grid__cell--span-10">
+            Unfortunately, I am not permissed to navigate you to the content that you expected. If you any questions, you may email me at <a href="mailto:{{ user.email }}" target="_blank">{{ user.email }}</a>.
+        </p>
+        <div class="tmc-space-desktop mdc-layout-grid__cell--span-1"></div>
+    </div>
+  </div>
   <div class="tmc-cell__divider mdc-layout-grid__cell--span-12"></div>
   {% include footer.html name=user.first upwork=user.upwork linkedin=user.linkedin email=user.email github=user.github %}
 </body>
