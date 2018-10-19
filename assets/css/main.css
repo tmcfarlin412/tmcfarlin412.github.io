@@ -8,6 +8,53 @@ body {
     -o-user-select: none;
 }
 
+*.allow-user-select * {
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    -o-user-select: text;
+}
+
+table {
+    background: white;
+    border-spacing: 0px;
+    font-size: 14px;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12)
+}
+
+code {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
+    max-height: 400px;
+}
+
+.post > p > code {
+    box-shadow: none;
+}
+
+.post > pre {
+    display: inline-block;
+}
+
+thead {
+    height: 35px;
+    font-size: 16px;
+}
+
+th, td {
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    padding: 4px 8px;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
 .tmc-content__intro h2 {
     text-align: center;
 }
@@ -590,4 +637,22 @@ button.mdc-tab:nth-child(2) {
     .tmc-portfolio__card--content {
         grid-template-columns: 40% 60%;
     }
-  }
+}
+
+.post > * {
+    margin-left: 24px;
+}
+
+.post > h1 {
+    margin-left: 0px;
+}
+
+.post > h2 {
+    margin-left: 0px;
+    margin-top: 64px;
+}
+
+.post > h3, .post > h4, .post > h5 {
+    margin-top: 32px;
+}
+

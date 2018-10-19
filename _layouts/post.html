@@ -2,9 +2,11 @@
 layout: default
 ---
 
-<div class="mdc-layout-grid__cell--span-12">
+<div class="post allow-user-select mdc-layout-grid__cell--span-12">
     <h1>{{ page.title }}</h1>
     <p>{{ page.date | date_to_string }} - {{ site.data.people[page.author].name }}</p>
 
     {{ content }}
+
+    <p>If you have questions or comments, please send a reply <a href="{{ page.twitterUrl }}">on Twitter</a></p>
 </div>
