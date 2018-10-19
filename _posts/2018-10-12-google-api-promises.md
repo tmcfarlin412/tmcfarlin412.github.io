@@ -38,7 +38,7 @@ Mitigation of quota errors requires a two-part solution: recovery and prevention
 
 ## Example case
 
-Consider this scenario. You are making the Chrome Extension "Name update" which updates all files in one of your Google Drive folders to have the same filename. The Google Drive API facilitates the updating of file names with an "update" endpoint. One request must be made for each file that needs to be updated. You write the following code, but requests fail due to quota limit errors. "fetch" is a function available to Chrome Extensions and Chrome Apps that helps to interact with Google APIs. The function "updateNamesInFolder" runs to update the names in a folder.
+Consider this scenario. You are making the Chrome Extension "Name update" which updates all files in one of your Google Drive folders to have the same filename. The Google Drive API facilitates the updating of file names with their <a href="https://developers.google.com/drive/api/v3/reference/files/update" target="_blank">update</a> endpoint. One request must be made for each file that needs to be updated. You write the following code, but requests fail due to quota limit errors. `fetch` is a function available to Chrome Extensions and Chrome Apps that helps to interact with Google APIs. The function `updateNamesInFolder` runs to update the names in a folder.
 
 ```
 function updateNamesInFolder(folderId, name) {
@@ -58,7 +58,7 @@ function fetchUpdateName(id, name) {
 }
 ```
 
-This code results in responses with errors containing the reason "userRateLimitExceeded".
+This code results in responses with errors containing the reason `"userRateLimitExceeded"`.
 
 ## Queries per 100 seconds per user
 
@@ -238,7 +238,7 @@ function delayPromise(delay) {
 
 ## Queries per 100 seconds
 
-`"rateLimitExceeded"` indicates that more than the combined number of requests being made for every instance of the application exceeds 10,000 per 100 seconds. The recovery strategy is identical to the recovery strategy deployed for the user rate limit. However, prevention of this error requires an update to the code. In order to prevent this error in the future, the delay between requests must be increased. That is because if this rate is being exceeded and all apps do not alter how they make the requests, the error may persist. Thus, the prevention strategy is as follows. If a "rateLimitExceeded" error is received, increase the delay between requests, delay the retry, and then retry the request once the delay has passed. If the error occurs again, increase the delay again before retrying. Finally, since we do not want the delay to permanently be increased, once we have a few sequential successful requests (10 in the following implementation), taper the delay back. By incrementally increasing the delay between requests, the overall query rate will decrease and the error should vanish across application instances. This is a good strategy to deploy for the user rate limit as well. Here is an implementation of this strategy.
+`"rateLimitExceeded"` indicates that more than the combined number of requests being made for every instance of the application exceeds 10,000 per 100 seconds. The recovery strategy is identical to the recovery strategy deployed for the user rate limit. However, prevention of this error requires an update to the code. In order to prevent this error in the future, the delay between requests must be increased. That is because if this rate is being exceeded and all apps do not alter how they make the requests, the error may persist. Thus, the prevention strategy is as follows. If a `"rateLimitExceeded"` error is received, increase the delay between requests, delay the retry, and then retry the request once the delay has passed. If the error occurs again, increase the delay again before retrying. Finally, since we do not want the delay to permanently be increased, once we have a few sequential successful requests (10 in the following implementation), taper the delay back. By incrementally increasing the delay between requests, the overall query rate will decrease and the error should vanish across application instances. This is a good strategy to deploy for the user rate limit as well. Here is an implementation of this strategy.
 
 In the following snippet, the application `"rateLimitExceeded"` error is mitigated here by dynamically changing the delay.
 

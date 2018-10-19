@@ -612,6 +612,18 @@ button.mdc-tab:nth-child(2) {
     .tmc-portfolio__card--technologies {
         grid-area: technologies;
     }
+
+    .post>* {
+        margin-left: 24px;
+    }
+
+    .post>h1 {
+        margin-left: 0px;
+    }
+
+    .post>h2 {
+        margin-left: 0px;
+    }
 }
 
 /* desktop */
@@ -639,16 +651,7 @@ button.mdc-tab:nth-child(2) {
     }
 }
 
-.post > * {
-    margin-left: 24px;
-}
-
-.post > h1 {
-    margin-left: 0px;
-}
-
-.post > h2 {
-    margin-left: 0px;
+.post > h2 {    
     margin-top: 64px;
 }
 
