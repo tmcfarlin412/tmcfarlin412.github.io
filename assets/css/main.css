@@ -8,12 +8,43 @@ body {
     -o-user-select: none;
 }
 
-*.allow-user-select * {
+#toast {
+    /* display: none; */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 18px 24px;
+    position: fixed;
+    left: 24px;
+    bottom: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+*.allow-user-select, *.allow-user-select * {
     -moz-user-select: text;
     -webkit-user-select: text;
     -ms-user-select: text;
     user-select: text;
     -o-user-select: text;
+}
+
+*.tmc-copy, *.tmc-copy * {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+}
+
+*.tmc-copy {
+    cursor: pointer;
+}
+
+*.tmc-copy:hover {
+    background: rgba(0, 0, 0, 0.1);
 }
 
 table {
@@ -538,6 +569,24 @@ button.mdc-tab:nth-child(2) {
 
 .tmc-technologies > * {
     padding: 0 8px;
+}
+
+.tmc-email-template {
+    padding: 24px;
+}
+
+.tmc-email-template__subject > * {
+}
+
+.tmc-email-template__subject > div:first-child, .tmc-email-template__body > div:first-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tmc-email-template__subject > div:last-child, .tmc-email-template__body > div:last-child {
+    margin-left: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 /* tablet */
