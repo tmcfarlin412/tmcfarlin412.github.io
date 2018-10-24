@@ -84,10 +84,15 @@
                 </span>
             </div>
         </div>
-        <div class="tmc-testimonial__quote">
-            <span>
-                "{{ testimonial.quote }}"
-            </span>
+        <div class="tmc-testimonial__quotes">
+            {% assign quote_count = testimonial.quotes | size %}
+            {% for quote in testimonial.quotes %}
+            <div class="tmc-testimonial__quote">
+                <span>
+                    "{{ quote }}"
+                </span>
+            </div>
+            {% endfor %}
         </div>
     </div>
     {% endfor %}

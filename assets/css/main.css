@@ -556,6 +556,20 @@ button.mdc-tab:nth-child(2) {
     background-size: cover;
 }
 
+.tmc-arrow-up {
+    width: 24px;
+    height: 24px;
+    background-image: url('/assets/images/arrow-right.png');
+    background-size: cover;
+}
+
+.tmc-arrow-down {
+    width: 24px;
+    height: 24px;
+    background-image: url('/assets/images/arrow-right.png');
+    background-size: cover;
+}
+
 .tmc-row__testimonials .tmc-arrow-left, .tmc-row__testimonials .tmc-arrow-right  {
     cursor: pointer;
     flex-shrink: 0;
