@@ -4,13 +4,17 @@ layout: default
 ---
 
 {% assign user = site.data.people[page.user] %}
-<p>Request free consultation by emailing me at <span class="tmc-copy" data-copy="tommcfarlinconsulting@gmail.com">tommcfarlinconsulting@gmail.com</span>. Please use the following email template.</p>
+<p>Request free consultation by emailing me using the following template, or <a target="_blank" href='mailto:{{ user.email }}?subject=Free%20consultation&body=What+is+the+description+of+the+work%3F+Please+provide+a+summary+and+requirements.%0D%0A%0D%0A%0D%0A%0D%0AWhat+services+are+of+interest+to+you%3F+Please+specify+hourly+rate%2C+quick+quote%2C+technical+quote%2C+or+something+else.%0D%0A%0D%0A%0D%0A%0D%0AWhat+times+are+you+available+to+talk+via+phone%3F+If+you+prefer+to+email%2C+please+write+%22I+prefer+to+email.%22%0D%0A%0D%0A%0D%0A%0D%0A'>click here</a> to launch your email provider.
 <h2>Email template</h2>
-<p>Click the text to copy it to your clipboard or <a href='mailto:{{ user.email }}?subject=Free%20consultation&body=What+is+the+description+of+the+work%3F+Please+provide+a+summary+and+requirements.%0D%0A%0D%0A%0D%0A%0D%0AWhat+services+are+of+interest+to+you%3F+Please+specify+hourly+rate%2C+quick+quote%2C+technical+quote%2C+or+something+else.%0D%0A%0D%0A%0D%0A%0D%0AWhat+times+are+you+available+to+talk+via+phone%3F+If+you+prefer+to+email%2C+please+write+%22I+prefer+to+email.%22%0D%0A%0D%0A%0D%0A%0D%0A'>click here</a> to launch your email provider with this template.</p></p>
+<p>Click the text to copy it to your clipboard</p>
 <div class="tmc-email-template mdc-card">
+    <div class="tmc-email-template__to">
+        <div>To</div>
+        <div class="tmc-copy" data-copy="tommcfarlinconsulting@gmail.com">tommcfarlinconsulting@gmail</div>
+    </div>
     <div class="tmc-email-template__subject">
         <div>Subject</div>
-        <div class="tmc-copy" data-copy="Free conjsultation">Free consultation</div>
+        <div class="tmc-copy" data-copy="Free consultation">Free consultation</div>
     </div>
     <div class="tmc-email-template__body">
         <div>Body</div>

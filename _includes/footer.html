@@ -1,16 +1,22 @@
 <footer>
     <div class="tmc-social-media">
-        <a href="{{ include.upwork }}" target="_blank">
-            <img src="/assets/images/upwork.png" alt="View {{ include.name }} on Upwork">
+        <a href="{{ user.upwork }}" target="_blank">
+            <img src="/assets/images/upwork.png" alt="View {{ user.name }} on Upwork">
         </a>
-        <a href="{{ include.linkedin }}" target="_blank">
-            <img src="/assets/images/linkedin.png" alt="View {{ include.name }} on LinkedIn">
+        <a href="{{ user.linkedin }}" target="_blank">
+            <img src="/assets/images/linkedin.png" alt="View {{ user.name }} on LinkedIn">
         </a>
-        <a href="{{ include.github }}" target="_blank">
-            <img src="/assets/images/github.png" alt="View {{ include.name }} on Github">
+        <a href="{{ user.github }}" target="_blank">
+            <img src="/assets/images/github.png" alt="View {{ user.name }} on Github">
         </a>
-        <a href="mailto:{{ include.email }}" target="_blank">
-            <img src="/assets/images/email.png" alt="Send {{ include.name }} an email">
+        <a href="mailto:{{ user.email }}" target="_blank">
+            <img src="/assets/images/email.png" alt="Send {{ user.name }} an email">
+        </a>
+        <a href="{{ user.twitter }}" target="_blank">
+            <img src="/assets/images/twitter.png" alt="View {{ user.name }} on Twitter">
+        </a>
+        <a href="{{ user.rss }}" target="_blank">
+            <img src="/assets/images/rss.png" alt="Subscribe to blog">
         </a>
     </div>
     <a id="tmc-references" href="/attribution.html">Attributions</a>

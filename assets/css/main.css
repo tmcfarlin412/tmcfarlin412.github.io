@@ -589,18 +589,26 @@ button.mdc-tab:nth-child(2) {
     padding: 24px;
 }
 
-.tmc-email-template__subject > * {
-}
-
-.tmc-email-template__subject > div:first-child, .tmc-email-template__body > div:first-child {
+.tmc-email-template > * > div:first-child {
     font-weight: bold;
     font-size: 18px;
 }
 
-.tmc-email-template__subject > div:last-child, .tmc-email-template__body > div:last-child {
+.tmc-email-template > * > div:last-child {
     margin-left: 24px;
     margin-top: 12px;
     margin-bottom: 12px;
+}
+
+.tmc-blog-subscribe {
+    display: flex;
+    align-items: center;
+}
+
+.tmc-blog-subscribe img {
+    width: 18px;
+    height: 18px;
+    padding: 4px;
 }
 
 /* tablet */
