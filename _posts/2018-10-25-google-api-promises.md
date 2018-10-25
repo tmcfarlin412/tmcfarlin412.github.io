@@ -3,7 +3,7 @@ title: Managing Google API Quotas
 description: "Exceeding Google API quotas can break your app. Luckily, there are simple measures that developers may take to mitigate these detrimental errors. This post explains how to avoid exceeding these quotas, and demonstrates how developers may update their code to eliminate quota errors in JavaScript applications."
 layout: post
 author: tom
-twitterUrl: https://twitter.com/tommconsulting
+twitterUrl: https://twitter.com/tommconsulting/status/1055524798871289856
 ---
 
 {% assign author = site.data.people[page.author] %}
