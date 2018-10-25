@@ -42,12 +42,11 @@
             <div class="tmc-space-tablet tmc-space-desktop mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-10-desktop">
                 <div class="mdc-layout-grid__inner">
-                
-
                     <div class="post allow-user-select mdc-layout-grid__cell--span-12">
                         <h1>{{ page.title }}</h1>
                         <p>{{ page.date | date_to_string }} - {{ site.data.people[page.author].name }}</p>
 
+                        {% include blog_subscribe.html %}
                         {{ content }}
 
                         <p>If you have questions or comments, please send a reply <a href="{{ page.twitterUrl }}">on Twitter</a></p>

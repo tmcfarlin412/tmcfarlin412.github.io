@@ -3,6 +3,7 @@ baseUrl: https://tmcfarlin412.github.io
 url: https://tmcfarlin412.github.io
 plugins:
   - jekyll-feed 
+future: false
 defaults:
 -
   scope:
