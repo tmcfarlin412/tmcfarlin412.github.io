@@ -1,3 +1,15 @@
+- formFiller:
+  id: formFiller
+  name: Form Filler
+  url: 
+  image: /assets/images/formFiller/logo.png
+  timeline: Oct 16 2018
+  summary: "The Chrome extension that in a work client used for work purposes broke upon adding a new pages and enabling SSL. The client sent the extension in a zip file, the bug was identified and fixed, and the updated app was returned and approved. An additional boat was also discovered during an audit of the act, and subsequently fixed. The turnaround time of this project was one hour."
+  technologies: JS,HTML,Chrome Extension,Chrome Developer Tools
+  tasks:
+    - 1:
+      name: Identify and fix bug
+      summary: "This particular Chrome extension parsed form data that the user entered into a website. It is then identified white listed URLs and auto filled forms with previously entered data. This helped the clients to conduct work more quickly, however upon a website update the extension no longer worked. The update to the website required the manifest file to be updated to include the https schema. In addition, new pages were added to the website that needed to be parsed. The content script was updated to recognize these new pages. Finally, during testing of these updates, and additional bug was found that was not previously identified by the client. This was fixed."
 - taxFunctions:
   id: taxFunctions
   name: Tax functions
