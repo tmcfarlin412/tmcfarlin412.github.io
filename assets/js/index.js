@@ -166,4 +166,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
         // hide
         hideProject(document.getElementById(projectHeaders[i].getAttribute('data-project-id')));
    }
+
+   // open portfolio items based on query param
+   const queryParamPortfolio = getUrlParameter('project')
+   if (queryParamPortfolio) {
+       const projectId = 'project-' + queryParamPortfolio 
+       const projectNode = document.querySelector('[data-project-id="' + projectId + '"]')
+       if (projectNode) {
+           toggleProjectVisibility(projectId)
+           projectNode.scrollIntoView();
+       }
+   }
 });
