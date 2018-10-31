@@ -42,7 +42,7 @@ Buy a bucket, buy 4 ice cube trays. Set a calendar reminder for 15 min before yo
 
 Learn about proper standing desk ergonomics. Buy an impact mat, mechanical keyboard with cherry MX brown switches and learn to type softly (stop pounding on the keyboard if you do). Buy armrests, a trackpad or mouse, and a laptop stand. Stand at least 50% of the day, and be sure to bend your knees slightly otherwise back issues will be your next problem. 
 
-Here's a picture of my setup, and links to the products.
+Here are links to the products that I use.
 
 - Mat <a href="https://www.amazon.com/gp/product/B074V2FNV2/" target="_blank">https://www.amazon.com/gp/product/B074V2FNV2/</a>
 - Arm rests <a href="https://www.amazon.com/gp/product/B00QMMMFU8/" taget="_blank">https://www.amazon.com/gp/product/B00QMMMFU8/</a>
