@@ -3,7 +3,7 @@ title: Beating Carpal Tunnel Syndrome and repetitive strain injury
 description: "I was diagnosed with bilateral (both hands) carpal tunnel syndrome in Fall of 2016. You will find countless blog posts telling you how terrible carpal tunnel is, and they are all true. You will also find countless routines teaching you how to keep symptoms at bay. Here is what helps me to continue my career."
 layout: post
 author: tom
-twitterUrl: https://twitter.com/tommconsulting/
+twitterUrl: https://twitter.com/tommconsulting/status/1057697353006690304
 ---
 
 {% assign author = site.data.people[page.author] %}
