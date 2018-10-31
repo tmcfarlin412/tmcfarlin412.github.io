@@ -1,12 +1,19 @@
-- 1:
+- 3:
+  title: Upwork Customer
+  companyName: 
+  companyUrl:
+  quotes: 
+    - I had a very short deadline and Tom got the job done in record time. Strongly recommend using him.
+  imageUrl: /assets/images/formFiller/logo.png
+- 2:
   title: CEO/Co-founder
-  companyName: simpleTocker
-  companyUrl: /proprietary.html
+  companyName: ezClocker
+  companyUrl: https://ezclocker.com
   quotes: 
     - Tom is an outstanding developer. This was my second project with him. Highly recommend.
     - It was a pleasure to work with Tom. He is a highly experienced Android developer, great communicator where he keeps you updated on the progress of your project and gives you recommendations on how to improve the app. Highly recommend and will hire again for our next project.
-  imageUrl: /assets/images/ez/ez_ph.png
-- 2:
+  imageUrl: /assets/images/ez/raya.jpg
+- 1:
   name: Alec Davis
   title: Product Manager, Customer Experience
   companyName: Mira Technologies

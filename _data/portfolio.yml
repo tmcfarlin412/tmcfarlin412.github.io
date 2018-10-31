@@ -66,11 +66,11 @@
       summary: A Chrome App and a Chrome Extension were developed to facilitate background download of Google Classroom content to student devices. If a teacher marked an assignment as "Cache offline" the Chrome App and Extension work together to download Google files (Docs, Sheets, Slides), videos, images, and any other file content to local storage so that students can view the materials without the Internet. Files that are edited by students remain in sync offline and with Google Drive.
 - ez:
   id: ez
-  name: simpleTocker
-  url: https://tmcfarlin.github.io/proprietary.html
-  image: /assets/images/ez/ez_ph.png
+  name: ezClocker
+  url: https://ezclocker.com
+  image: /assets/images/ez/ezClocker_logo.jpg
   timeline: May - Oct 2018
-  summary: simpleTocker is a timesheet solution for business owners. It simplifies the clocking in/out process with Android and iOS applications.<br><br>Crash fixes, performance improvements, data gathering optimization, and front-end updates were made to the Android application.
+  summary: ezClocker is a timesheet solution for business owners. It simplifies the clocking in/out process with Android and iOS applications.<br><br>Crash fixes, performance improvements, data gathering optimization, and front-end updates were made to the Android application. Learn more about ezClocker <a href="https://ezclocker.com" target="_blank">here</a>.
   technologies: Git,Android,Java,XML,Google Location Services for Android,Google Cloud APIs,Google Integrations
   tasks:
     - 1:
@@ -81,4 +81,4 @@
       summary: Out of memory errors can be caused by just a few misplaced characters in code. Through debugging and evaluation of the memory allocation throughout the app lifecycle, memory leaks were discovered and patched.
     - 3:
       name: Google location services
-      summary: simpleTocker uses Google Maps and location services to gather and display data; it is crucial that this data is accurate. The Android application was updated to use the latest Google Services to ensure the latest technology was available to end-users. A custom location gathering algorithm was developed improve the accuracy of the location coordinates and reduce battery consumption.
+      summary: ezClocker uses Google Maps and location services to gather and display data; it is crucial that this data is accurate. The Android application was updated to use the latest Google Services to ensure the latest technology was available to end-users. A custom location gathering algorithm was developed improve the accuracy of the location coordinates and reduce battery consumption.
