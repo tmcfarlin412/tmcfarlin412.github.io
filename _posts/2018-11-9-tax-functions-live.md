@@ -1,6 +1,6 @@
 ---
 title: "\"Tax Functions\" is live!"
-description: "Have you ever wanted a Google sheet function that returns your federal tax rate? Likely, if you are an accountant or tax preparer. \"Tax Functions\" adds useful tax functions to your Google Sheet"
+description: "Have you ever wanted a custom Google Sheet function? I make custom functions regularly and have made a few of mine available in \"Tax Functions\". If you are an accountant, a tax preparer, or anyone who does their own taxes in Google Sheets, \"Tax Functions\" can help!"
 layout: post
 author: tom
 twitterUrl: {{ user.twitter }}
@@ -8,7 +8,6 @@ twitterUrl: {{ user.twitter }}
 
 {% assign author = site.data.people[page.author] %}
 {{ page.description }}
-
 
 These functions become available on every one of your Google Sheets when you install "Tax Functions".
 
