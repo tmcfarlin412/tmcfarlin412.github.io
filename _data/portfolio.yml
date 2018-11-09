@@ -16,7 +16,7 @@
   url: https://chrome.google.com/webstore/detail/tax-functions/nocofnnmmigpdafiopnomcnblhmgjlmh
   image: /assets/images/taxFunctions/logo128.png
   timeline: Oct 2018 - Present
-  summary: "Tax functions is a Google Sheets add-on that adds tax-related functions to spreadsheets."# Add these functions to Google Sheets by navigating to a Sheet, click the menu \"Add-ons,\" click \"Get add ons,\" and search for \"Tax functions\". You may view in the Chrome Web Store and add it to a new Sheet <a href=\"https://chrome.google.com/webstore/detail/tax-functions/nocofnnmmigpdafiopnomcnblhmgjlmh\" target=\"_blank\">here</a>."
+  summary: "Tax functions is a Google Sheets add-on that adds tax-related functions to spreadsheets. Add these functions to Google Sheets by navigating to a Sheet, click the menu \"Add-ons,\" click \"Get add ons,\" and search for \"Tax functions\". You may view in the Chrome Web Store and add it to a new Sheet <a href=\"https://chrome.google.com/webstore/detail/tax-functions/nocofnnmmigpdafiopnomcnblhmgjlmh\" target=\"_blank\">here</a>."
   technologies: JS,Google Apps Scripts,Chrome Web Store,Google Sheets
   tasks:
     - 1:
