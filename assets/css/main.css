@@ -425,7 +425,7 @@ button.mdc-tab:nth-child(2) {
     visibility: hidden;
 }
 
-@media (min-width: 586px) {
+@media (min-width: 456px) {
     .tmc-intro__profile-triangle {
         visibility: visible;
     }
