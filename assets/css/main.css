@@ -247,6 +247,8 @@ h3 {
 }
 
 .mdc-top-app-bar__navigation-icon {
+    height: 48px;
+    width: 48px;
     background-image: url('/assets/images/logo.png');
     background-repeat: no-repeat;
     background-size: 24px 24px;
