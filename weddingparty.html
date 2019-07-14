@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <title>Wedding Party</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            var type;
+            var name;
+            const urlParams = new URLSearchParams(window.location.search);
+            const myParam = urlParams.get('q');
+            if (myParam == 'uC740nt2') {
+                type = 'Best Man';
+                name = 'Michael'
+            } else if (myParam == 'Sx78N2jF') {
+                type ='Groomsman';
+                name = 'Josh'; // Hollins
+            } else if (myParam == 'wQgmG4w1') {
+                type ='Groomsman';
+                name = 'Alec'; // 
+            } else if (myParam == '66MYbhtz') {
+                type ='Groomsman';
+                name = 'Joe'; // 
+            } else if (myParam == '1g9wHO3j') {
+                type ='Groomsman';
+                name = 'Josh'; // Hunt
+            } else if (myParam == 'Lx4Fnl13') {
+                type ='Groomsman';
+                name = 'Jake'; // 
+            } else if (myParam == 'hrFQ7B77') {
+                type ='Groomsman';
+                name = 'Quach'; // 
+            } else if (myParam == 'CkaV0JB8') {
+                type ='Groomsman';
+                name = 'Andy'; // 
+            } else {
+                document.body.style.color = 'black';
+                document.body.innerHTML = 'mmmmBeeepis';
+                // window.stop()
+                return;
+            }
+
+            var button = document.getElementById('submit');
+            
+            document.getElementById('type').innerText = type;
+            var rgb = function(r, g, b) {
+                return "rgb("+r+","+g+","+b+")";
+            }
+            stage2 = document.getElementById('stage-2')
+            
+            button.addEventListener('click', function (event) {
+                document.getElementById('stage-1').style.display = 'none';
+                document.getElementById('stage-2').style.display = 'block';
+                setInterval(() => {
+                    let r = Math.random() * 255;
+                    let g = Math.random() * 255;
+                    let b = Math.random() * 255;
+                    stage2.style.color = rgb(r, g, b);
+                }, 40);
+            });
+            
+            var nameContainerDiv = document.getElementById('name-container');
+            var nameDiv = document.getElementById('name');
+            nameDiv.innerText = name;
+            var questionDiv = document.getElementById('question');
+
+            var d0 = 0;
+            var d1 = 0;
+            var d2 = 0;
+            
+            var d0Interval = setInterval(() => {
+                d0++;
+                if (d0 == 10) {
+                    clearInterval(d0Interval);
+
+                    var d1Interval = setInterval(() => {
+                        d1++;
+                        if (d1 == 10) {
+                            clearInterval(d1Interval);
+
+                            var d2Interval = setInterval(() => {
+                                d2++;
+                                if (d2 == 10) {
+                                    clearInterval(d2Interval);
+                                }
+                                button.style.opacity = d2 * 0.1;
+                            }, 300)
+                        }
+                        questionDiv.style.opacity = d1 * 0.1;
+                    }, 300)
+                }
+                nameContainerDiv.style.opacity = d0 * 0.1;
+            }, 300)
+        });
+    </script>
+    <style>
+        body {
+            color: white;
+        }
+        #stage-1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+        }
+        #stage-2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+        }
+        #stage-1-container {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 24px;
+        }
+        #stage-2-container {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 24px;
+        }
+        #stage-1-container div {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        #name-container, #question, #submit {
+            visibility: visible;
+            opacity: 0;
+        }
+        #stage-2 {
+            top: 0;
+            left: 0;
+            position: absolute;
+            display: none;
+        }
+
+        #submit {
+            margin-top: 24px;
+            font-size: 36px;
+        }
+
+        #jump {
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="stage-1">
+        <div id="stage-1-container">
+            <div id="name-container"><span id="name"></span>,</div>
+            <div id="question">I have a quick question for you.</div>
+            <button id="submit">Continue</button>
+        </div>
+    </div>
+    <div id="stage-2">
+        <div id="stage-2-container">
+            <div>
+                Will you be my <span id="type"></span>?
+            </div>
+            <img id="jump" src="/assets/images/all_you_need_is_love_cropped.gif">
+            <div>Text or call 412-626-0565 to let me know!</div>
+        </div>
+    </div>
+</body>
+
+</html>
