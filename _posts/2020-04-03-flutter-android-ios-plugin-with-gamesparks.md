@@ -1,6 +1,6 @@
 ---
-title: "\"Flutter < 15 Xcode 11.4 Support\""
-description: "Fixes error \"Building for iOS, but the linked and embedded framework 'App.framework' was built for iOS Simulator.\""
+title: "\"Flutter plugin\""
+description: "How to create a Flutter plugin that includes platform-specific Java / Objective-C code"
 layout: post
 author: tom
 twitterUrl: {{ user.twitter }}
