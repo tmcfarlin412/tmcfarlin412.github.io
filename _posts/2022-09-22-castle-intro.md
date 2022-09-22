@@ -10,7 +10,8 @@ twitterUrl: {{ user.twitter }}
 {{ page.description }}
 
 This is an FYI, more for the sake of history. I wanted to document the start of my project to
-develop a 2D platformer game engine and game.
+develop a 2D platformer game engine and game. My favorite 2D platformer is Castlevania Aria of
+Sorrow, I'm a 90s kid who grew up on Super Mario World and Donkey Kong.
 
 Here's the <a href="https://github.com/tmcfarlin412/castle/tree/prod">Github project</a> under dev. One thing I'm doing with this
 project that I typically don't do is do little to project manage it! I usually project manage my
