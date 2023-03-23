@@ -9,8 +9,8 @@ twitterUrl: {{ user.twitter }}
 {% assign author = site.data.people[page.author] %}
 {{ page.description }}
 
-This is an FYI, more for the sake of history. I wanted to document the start of my project to
-develop a 2D platformer game engine and game. My favorite 2D platformer is Castlevania Aria of
+This is an FYI, more for the sake of history. On May 23, 2022, I started to design and develop a 2D
+platformer game engine and game. My favorite 2D platformer is Castlevania Aria of
 Sorrow, I'm a 90s kid who grew up on Super Mario World and Donkey Kong.
 
 Here's the <a href="https://github.com/tmcfarlin412/castle/tree/prod">Github project</a> under dev. One thing I'm doing with this
@@ -28,7 +28,7 @@ moments here and there I sink some time into the project. My goals are to
 
 <a href="https://tmcfarlin412.github.io/assets/images/2022-07-22_castle_screenshot.png">Screenshot of current state of project</a>
 
-Thus far the following skills have been picked up / worked on as a part of this journey:
+Skills learned / refined since start of project:
 
 - C++ development. Some large components of the engine include
   - View rendering system (inspired by Android system, since that's what I know)
