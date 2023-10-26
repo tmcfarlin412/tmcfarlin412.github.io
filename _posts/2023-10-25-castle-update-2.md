@@ -1,6 +1,6 @@
 ---
-title: "\"Update 1: Collision detection, motions, and weapons.\""
-description: "Sept' 22 - Mar '23 progress summary"
+title: "\"Update 2: Levels, saves, and items, oh my!\""
+description: "Mar '23 - Oct '23 progress summary"
 layout: post
 author: tom
 twitterUrl: {{ user.twitter }}
